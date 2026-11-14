@@ -536,4 +536,5 @@ Double click on the screen to wake up"</string>
     <string name="zoom_out_switch_normal">Zoom out again to cancel wide-angle effect</string>
     <string name="zoom_setting_title">Zoom</string>
     <string name="enhance_screen_brightness_title">Max screen brightness</string>
+    <string name="permission_allow">Allow</string>
 </resources>

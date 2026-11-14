@@ -91,6 +91,16 @@
 
     invoke-virtual {v3, v0}, Landroid/view/Window;->setGravity(I)V
 
+    const/16 v0, -0x40
+
+    invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v1
+
+    iput v0, v1, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    invoke-virtual {v3, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
     const/4 v0, -0x1
 
     const/4 v1, -0x2

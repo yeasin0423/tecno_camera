@@ -334,7 +334,7 @@
 
     move-result-object p1
 
-    const-string v1, "camera_permission_go_setting"
+    const-string v1, "permission_allow"
 
     invoke-static {p1, v1}, Lcom/transsion/camera/utils/CameraUtil;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 

@@ -761,7 +761,11 @@
     if-nez p2, :cond_2
 
     .line 80
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    iget-object v0, p0, Lcom/transsion/camera/app/PermissionActivity;->mPermissionManager:Lcom/transsion/camera/app/common/permission/PermissionManager;
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v1}, Lcom/transsion/camera/app/PermissionActivity;->showConfirmationFragment(Lcom/transsion/camera/app/common/permission/PermissionManager;Z)V
 
     .line 84
     :cond_2

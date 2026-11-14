@@ -6695,4 +6695,5 @@
     <public type="xml" name="camera_preferences" id="0x7f130000" />
     <public type="xml" name="editor_preferences" id="0x7f130001" />
     <public type="xml" name="shortcuts" id="0x7f130002" />
+    <public type="string" name="permission_allow" id="0x7f0f023d" />
 </resources>
