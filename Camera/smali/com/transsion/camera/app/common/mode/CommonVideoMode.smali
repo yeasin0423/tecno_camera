@@ -3366,6 +3366,8 @@
 
     if-eqz p1, :cond_0
 
+    iget-object v0, p0, Lcom/transsion/camera/app/common/mode/CameraMode;->mSettingController:Lcom/transsion/camera/app/common/setting/ISettingManager$SettingController;
+
     .line 654
     invoke-virtual {p0}, Lcom/transsion/camera/app/common/mode/CommonVideoMode;->getVideoOrientation()I
 
@@ -3374,8 +3376,6 @@
     invoke-virtual {p1, p0}, Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;->setVideoOrientation(I)Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;
 
     .line 655
-    iget-object v0, p0, Lcom/transsion/camera/app/common/mode/CameraMode;->mSettingController:Lcom/transsion/camera/app/common/setting/ISettingManager$SettingController;
-
     const/4 p0, 0x1
 
     if-eqz v0, :cond_1
