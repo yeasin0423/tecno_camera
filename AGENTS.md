@@ -57,6 +57,20 @@ project, is the source of truth.
 - Hand-edited smali compiles against Android 11 framework signatures. After any
   smali edit: rebuild → sign → install → launch. Build errors surface only at
   build time; behavioral breakage surfaces only at runtime.
+- **DEX ID limit**: `classes.dex` is already near an unsigned-short (65536)
+  index boundary. Adding any new method/field to `CameraActivity.smali` makes
+  the dex writer crash with `Unsigned short value out of range: 65536`. Put
+  new logic in its own class (see `OnBackInvokedCallbackImpl`) rather than
+  growing big existing classes. When the build fails like this, do not trust
+  cached `Camera/build/` output — wipe it (`rm -rf Camera/build`) and rebuild
+  with `apktool b` (clean/fresh only); incremental builds can reuse a stale
+  `classes.dex`.
+- Predictive back is wired for `CameraActivity` (incl. subclasses like
+  `SecureCameraActivity`) and `ReviewCameraActivity`: both register a window
+  `OnBackInvokedCallback` (`OnBackInvokedCallbackImpl`, priority 0) that
+  delegates into the legacy `onBackPressed()` chain. Without it, targetSdk 36
+  back-from-settings finished the whole app. If adding another activity that
+  hosts fragments, register the same callback in it.
 - Android 14+ (targetSdk 34+): every `registerReceiver()` needs an explicit
   `RECEIVER_EXPORTED`/`RECEIVER_NOT_EXPORTED` flag or the app crashes with
   `SecurityException`. All app-reachable sites use `RECEIVER_NOT_EXPORTED`
@@ -98,10 +112,12 @@ project, is the source of truth.
   dropped, never a crash.
 - Edge-to-edge is enforced at targetSdk 35+: system bars go transparent and
   content draws underneath. Expect possible visual overlap (nav-bar inset) on
-  some screens; fix would require insets handling per screen. Also unverifiable
-  without device: whether any non-SDK APIs the port relies on are blocked under
-  targetSdk 36 greylists — watch for `NoSuchMethodError`/`ClassNotFoundException`
-  at first launch or in specific modes.
+  some screens; fix would require insets handling per screen. Known hidden-API
+  denial observed on-device: `ValueAnimator.sDurationScale` (read via
+  reflection by the SVGA animation lib, `api=max-target-p`) — if SVGA throws
+  uncaught, expect crashes in SVGA-heavy screens (mode picker, night-mode
+  animations) at targetSdk 36; fix would be patching the reflection out or
+  bumping/replacing the lib.
 - Do NOT add `android:windowOptOutEdgeToEdgeEnforcement` to the theme: the
   build compiles against the Android 11 framework (`frame/1.apk`) and aapt
   rejects attributes added after API 30.
