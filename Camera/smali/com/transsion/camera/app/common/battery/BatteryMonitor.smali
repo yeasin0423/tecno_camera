@@ -298,7 +298,7 @@
 .end method
 
 .method public start()V
-    .locals 3
+    .locals 4
 
     .line 40
     iget-boolean v0, p0, Lcom/transsion/camera/app/common/battery/BatteryMonitor;->mIsReceiverRegistered:Z
@@ -333,7 +333,9 @@
 
     iget-object v2, p0, Lcom/transsion/camera/app/common/battery/BatteryMonitor;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const/4 v3, 0x4
+
+    invoke-virtual {v1, v2, v0, v3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
     .line 48
     invoke-direct {p0}, Lcom/transsion/camera/app/common/battery/BatteryMonitor;->updateCurrentBatteryIsLow()V

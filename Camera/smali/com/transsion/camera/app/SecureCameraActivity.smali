@@ -968,7 +968,7 @@
 .end method
 
 .method protected registerScreenOff()V
-    .locals 2
+    .locals 3
 
     .line 266
     new-instance v0, Landroid/content/IntentFilter;
@@ -990,7 +990,9 @@
     .line 272
     iget-object v1, p0, Lcom/transsion/camera/app/SecureCameraActivity;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const/4 v2, 0x4
+
+    invoke-virtual {p0, v1, v0, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
     const/4 v0, 0x1
 

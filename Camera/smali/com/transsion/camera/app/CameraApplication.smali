@@ -103,7 +103,7 @@
 .end method
 
 .method private registerPackageDataClear()V
-    .locals 2
+    .locals 3
 
     .line 63
     new-instance v0, Landroid/content/IntentFilter;
@@ -123,7 +123,9 @@
     .line 66
     iget-object v1, p0, Lcom/transsion/camera/app/CameraApplication;->mDataClearReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1, v0}, Landroid/app/Application;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const/4 v2, 0x4
+
+    invoke-virtual {p0, v1, v0, v2}, Landroid/app/Application;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
     return-void
 .end method

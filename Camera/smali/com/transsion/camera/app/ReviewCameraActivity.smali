@@ -165,7 +165,7 @@
 .end method
 
 .method protected onCreateTasks(Landroid/os/Bundle;)V
-    .locals 3
+    .locals 4
 
     .line 51
     invoke-direct {p0}, Lcom/transsion/camera/app/ReviewCameraActivity;->updateWindow()V
@@ -269,7 +269,9 @@
     .line 76
     iget-object v0, p0, Lcom/transsion/camera/app/ReviewCameraActivity;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0, p1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const/4 v3, 0x4
+
+    invoke-virtual {p0, v0, p1, v3}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
     :cond_1
     return-void

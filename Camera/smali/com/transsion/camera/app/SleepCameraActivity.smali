@@ -87,7 +87,7 @@
 
 # virtual methods
 .method protected onCreateTasks(Landroid/os/Bundle;)V
-    .locals 2
+    .locals 3
 
     .line 29
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -166,7 +166,9 @@
     .line 54
     iget-object v0, p0, Lcom/transsion/camera/app/SleepCameraActivity;->mScreenOffReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0, p1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const/4 v2, 0x4
+
+    invoke-virtual {p0, v0, p1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
     :cond_0
     return-void
