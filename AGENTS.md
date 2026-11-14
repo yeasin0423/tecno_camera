@@ -16,9 +16,8 @@ project, is the source of truth.
   `apktool d Camera.apk -p frame/`
 - Build: `apktool b Camera -o test.apk -p frame/`
 - `-p frame/` is mandatory for **every** apktool call. `frame/1.apk` is the
-  Android 11 framework resource APK (package `android`, v11); it is gitignored
-  and not redistributable, keep it locally (re-obtain from the stock ROM /
-  device backup if lost).
+  Android 11 framework resource APK (package `android`, v11). It is now tracked
+  in git (user request) — it is proprietary, keep the repo private.
 - apktool does **not** sign. Sign `test.apk` before installing:
   `apksigner sign --ks my-key.jks test.apk` (key alias/password known to user;
   `my-key.jks` is gitignored — never commit it).
@@ -167,7 +166,9 @@ install:
 ## Git / GitHub
 - Repo initialized on branch `main`. `.gitignore` excludes signing keys
   (`*.jks`/`*.keystore`), all `*.apk`/`*.aab` (root APKs exceed GitHub's 100MB
-  limit, and `frame/1.apk` is proprietary), and `build/` / `Camera/build/`.
+  limit), and `build/` / `Camera/build/` — except `frame/1.apk`, which is
+  tracked on user's request (it unpacks the Android 11 framework; keep the
+  repo private if licensing matters).
 - Committed tree ≈ 440M of binaries (assets/lib/smali) tracked in plain git —
   no LFS; keep GitHub's 100MB/file limit in mind if adding large files.
 - Remote: `origin` → github.com/yeasin0423/tecno_camera (`main` tracks
@@ -175,9 +176,9 @@ install:
   `Camera/lib/arm64-v8a/libstfaceunlockppl.so` (~52M) exceeds the 50M
   recommended size — it is already committed; only migrate to LFS with the
   user's explicit go-ahead.
-- Modernization commits on `main` (not yet pushed): build config/manifest
-  (minSdk 33 / targetSdk 36, `a81f353`), PendingIntent mutability fix
-  (`e254971`). `test.apk` in the root is the locally-built, unsigned
-  modernization build — never commit it.
-- `frame/`, `my-key.jks`, and the APKs exist only on this machine; a fresh
-  clone cannot build until `frame/1.apk` is supplied and the APKs are rebuilt.
+- Everything through `2cf720a` is pushed. Local pending commits may exist —
+  check `git log origin/main..HEAD`. `test.apk` in the root is the
+  locally-built, unsigned modernization build — never commit it.
+- `my-key.jks` and the APKs exist only on this machine; a fresh clone builds
+  fine now (frame/1.apk is in git), except it cannot be signed/installed
+  without the key.
