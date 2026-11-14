@@ -57,6 +57,17 @@ project, is the source of truth.
 - Hand-edited smali compiles against Android 11 framework signatures. After any
   smali edit: rebuild → sign → install → launch. Build errors surface only at
   build time; behavioral breakage surfaces only at runtime.
+- Permissions are referenced in smali, not only the manifest. Whenever a
+  permission is added/removed, grep the whole tree (`grep -rn "<perm>" Camera`)
+  and migrate call sites (`checkSelfPermission` lists, request lists, dialog
+  labels) or the app will infinite-loop asking for a permission the system
+  can never grant (logcat: `No requestable permission in the request`).
+  Legacy storage perms were migrated to `READ_MEDIA_IMAGES`/`READ_MEDIA_VIDEO`
+  in `PermissionManager` + `ConfirmationFragment`; faceunity probes
+  `MANAGE_EXTERNAL_STORAGE`.
+- Prefer explicit `git add <files>` over `git add -A`: the root accumulates
+  `test.apk`, `test.apk.idsig`, `logs.txt`, etc. — all gitignored, but don't
+  rely on that alone.
 - Backup/restore: `allowBackup="true"` + `restoreAnyVersion="true"` kept;
   targetSdk 36 re-evaluates backup rules (`dataExtractionRules` not set — it
   was never configured); flag for a future pass if backup matters.
