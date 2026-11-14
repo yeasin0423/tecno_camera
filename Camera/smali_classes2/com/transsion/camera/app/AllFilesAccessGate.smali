@@ -8,16 +8,6 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/transsion/camera/app/AllFilesAccessGate;->sPromptShown:Z
-
-    return-void
-.end method
-
 .method public static maybePrompt(Landroid/app/Activity;)Z
     .locals 3
 
