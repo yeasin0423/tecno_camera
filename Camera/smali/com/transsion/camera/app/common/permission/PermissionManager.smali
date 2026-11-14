@@ -267,14 +267,14 @@
     .line 234
     iget-object v0, p0, Lcom/transsion/camera/app/common/permission/PermissionManager;->mAllPermissionList:Ljava/util/List;
 
-    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 235
     iget-object v0, p0, Lcom/transsion/camera/app/common/permission/PermissionManager;->mAllPermissionList:Ljava/util/List;
 
-    const-string v1, "android.permission.READ_EXTERNAL_STORAGE"
+    const-string v1, "android.permission.READ_MEDIA_VIDEO"
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -315,14 +315,14 @@
     .line 243
     iget-object v0, p0, Lcom/transsion/camera/app/common/permission/PermissionManager;->mLaunchPermissionList:Ljava/util/List;
 
-    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 244
     iget-object p0, p0, Lcom/transsion/camera/app/common/permission/PermissionManager;->mLaunchPermissionList:Ljava/util/List;
 
-    const-string v0, "android.permission.READ_EXTERNAL_STORAGE"
+    const-string v0, "android.permission.READ_MEDIA_VIDEO"
 
     invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -579,12 +579,12 @@
     .line 193
     invoke-interface {p0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v4, "android.permission.WRITE_EXTERNAL_STORAGE"
+    const-string v4, "android.permission.READ_MEDIA_IMAGES"
 
     .line 194
     invoke-interface {p0, v4, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v5, "android.permission.READ_EXTERNAL_STORAGE"
+    const-string v5, "android.permission.READ_MEDIA_VIDEO"
 
     .line 195
     invoke-interface {p0, v5, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

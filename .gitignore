@@ -19,3 +19,7 @@ Camera/build/
 Thumbs.db
 *.swp
 *~
+
+# Local logs and signing artifacts
+logs.txt
+*.idsig

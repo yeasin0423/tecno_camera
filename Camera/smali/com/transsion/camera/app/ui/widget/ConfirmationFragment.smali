@@ -132,16 +132,41 @@
     return-object v0
 
     :cond_0
-    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
 
     .line 164
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_4
 
     .line 165
+    invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    const-string p1, "permgrouplab_storage"
+
+    invoke-static {p0, p1}, Lcom/transsion/camera/utils/CameraUtil;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_4
+    const-string v1, "android.permission.READ_MEDIA_VIDEO"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object p0
@@ -446,7 +471,7 @@
     invoke-interface {p1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     :cond_0
-    const-string v0, "android.permission.READ_EXTERNAL_STORAGE"
+    const-string v0, "android.permission.READ_MEDIA_VIDEO"
 
     .line 136
     invoke-interface {p1, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -455,7 +480,7 @@
 
     if-eqz v1, :cond_1
 
-    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
 
     invoke-interface {p1, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 

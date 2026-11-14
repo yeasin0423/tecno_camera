@@ -158,7 +158,7 @@
 .method private static f(Landroid/content/Context;)Z
     .locals 1
 
-    const-string v0, "android.permission.WRITE_EXTERNAL_STORAGE"
+    const-string v0, "android.permission.MANAGE_EXTERNAL_STORAGE"
 
     .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
