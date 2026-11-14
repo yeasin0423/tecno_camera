@@ -69,12 +69,9 @@ project, is the source of truth.
   in `OnBackInvokedCallbackImpl.registerBackCallback`. Note
   `Window.setOnBackInvokedCallback` does NOT exist on the runtime framework
   (hidden/system API) — calling it crashes at launch with `NoSuchMethodError`.
-- Predictive back is wired for `CameraActivity` (incl. subclasses like
-  `SecureCameraActivity`) and `ReviewCameraActivity`: both register a window
-  `OnBackInvokedCallback` (`OnBackInvokedCallbackImpl`, priority 0) that
-  delegates into the legacy `onBackPressed()` chain. Without it, targetSdk 36
-  back-from-settings finished the whole app. If adding another activity that
-  hosts fragments, register the same callback in it.
+  Registered in `CameraActivity` (covers `SecureCameraActivity`) and
+  `ReviewCameraActivity`; any future activity hosting settings/review
+  fragments needs the same call after `setContentView`.
 - Android 14+ (targetSdk 34+): every `registerReceiver()` needs an explicit
   `RECEIVER_EXPORTED`/`RECEIVER_NOT_EXPORTED` flag or the app crashes with
   `SecurityException`. All app-reachable sites use `RECEIVER_NOT_EXPORTED`
