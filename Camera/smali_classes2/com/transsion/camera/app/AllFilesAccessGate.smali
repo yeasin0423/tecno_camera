@@ -10,7 +10,7 @@
 
 # direct methods
 .method public static maybePrompt(Landroid/app/Activity;)Z
-    .locals 4
+    .locals 7
 
     .line 14
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -37,77 +37,89 @@
 
     sput-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sShown:Z
 
-    new-instance v2, Landroid/app/AlertDialog$Builder;
+    new-instance v2, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
 
-    invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p0}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string v1, "All files access"
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
-    invoke-virtual {v2, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    move-result-object v0
 
-    move-result-object v2
+    const-string v1, "camera_permission_title"
 
-    const-string v1, "Camera needs All files access so it can save videos and AR effects to storage. Tap Allow, then toggle it on."
+    invoke-static {v0, v1}, Lcom/transsion/camera/utils/CameraUtil;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v2, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-virtual {v2, v0}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "camera_function_permission_head"
+
+    invoke-static {v0, v1}, Lcom/transsion/camera/utils/CameraUtil;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v6, 0x1
+
+    new-array v5, v6, [Ljava/lang/String;
+
+    const-string v6, "All files"
+
+    const/4 v3, 0x0
+
+    aput-object v6, v3, v5
+
+    invoke-static {v0, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "permission_allow"
+
+    invoke-static {v0, v1}, Lcom/transsion/camera/utils/CameraUtil;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
 
     new-instance v1, Lcom/transsion/camera/app/AllFilesAccessGate$1;
 
     invoke-direct {v1, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$1;-><init>(Landroid/app/Activity;)V
 
-    const-string v0, "Allow"
+    invoke-virtual {v2, v0, v1}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
 
-    invoke-virtual {v2, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    const/high16 v0, 0x1040000
 
-    move-result-object v2
+    new-instance v1, Lcom/transsion/camera/app/AllFilesAccessGate$2;
 
-    new-instance v0, Lcom/transsion/camera/app/AllFilesAccessGate$2;
+    invoke-direct {v1, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$2;-><init>(Landroid/app/Activity;)V
 
-    invoke-direct {v0, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$2;-><init>(Landroid/app/Activity;)V
-
-    const-string v1, "Later"
-
-    invoke-virtual {v2, v1, v0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v2
+    invoke-virtual {v2, v0, v1}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
 
     const/4 v0, 0x0
 
-    invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v0}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setCancelable(Z)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
+
+    invoke-virtual {v2}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->create()Lcom/transsion/widgetslib/dialog/PromptDialog;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+    invoke-virtual {v2}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v2}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+    const/16 v1, 0x50
 
-    move-result-object v3
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setGravity(I)V
 
-    const/16 v0, 0x50
-
-    invoke-virtual {v3, v0}, Landroid/view/Window;->setGravity(I)V
-
-    const/16 v0, -0x40
-
-    invoke-virtual {v3}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
-
-    move-result-object v1
-
-    iput v0, v1, Landroid/view/WindowManager$LayoutParams;->y:I
-
-    invoke-virtual {v3, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
-
-    const/4 v0, -0x1
-
-    const/4 v1, -0x2
-
-    invoke-virtual {v3, v0, v1}, Landroid/view/Window;->setLayout(II)V
-
-    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
+    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
 
     :block
     const/4 p0, 0x1
