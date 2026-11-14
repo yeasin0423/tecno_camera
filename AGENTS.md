@@ -100,6 +100,16 @@ project, is the source of truth.
 - When adding new binary assets (`.bundle`, `.bin`, `.svga`, `.xbin`, `.model`…),
   add the path/extension to `doNotCompress` in `apktool.yml` or they will be
   compressed and can fail to load/mmap at runtime.
+- All files access is gated: `PermissionActivity.onPermissionCreateTasks`
+  and `onPermissionResumeTasks` both call
+  `AllFilesAccessGate.maybePrompt` (smali_classes2) before any camera work.
+  Granted → no popup; not granted → modal prompt, camera does not start.
+  Allow → per-app All-files settings (camera opens when the user returns —
+  gate passes once `sPromptShown` is set); Later → `activity.recreate()`,
+  camera opens immediately. `OnBackInvokedCallbackImpl.registerBackCallback`
+  is back-gesture only. Crashlytics (dead, no ContentProvider in manifest)
+  was moved to smali_classes2 to free dex ids in classes.dex — leave it
+  there or the build overflows the id limit again.
 - **targetSdk 36 requires "All files access".** The video pipeline
   (temp files in shared DCIM + rename-based save), and the AR asset extraction
   (`copyAssetsToSD`) use direct `File` paths. They cannot be fixed without a
