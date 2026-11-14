@@ -72,6 +72,11 @@ project, is the source of truth.
   Registered in `CameraActivity` (covers `SecureCameraActivity`) and
   `ReviewCameraActivity`; any future activity hosting settings/review
   fragments needs the same call after `setContentView`.
+- smali 3.0.9 does not catch interface/class confusion at build time — an
+  `invoke-virtual` on an interface-typed value assembles fine and crashes at
+  runtime (`IncompatibleClassChangeError`). Check the declaration type on the
+  runtime framework for every new call site (framework API vs hidden API vs
+  interface vs class).
 - Android 14+ (targetSdk 34+): every `registerReceiver()` needs an explicit
   `RECEIVER_EXPORTED`/`RECEIVER_NOT_EXPORTED` flag or the app crashes with
   `SecurityException`. All app-reachable sites use `RECEIVER_NOT_EXPORTED`
