@@ -15,6 +15,23 @@
 
 
 # virtual methods
+.method public createPreferenceItemUI()Lcom/transsion/camera/app/common/ui/setting/IPreferenceItemUI;
+    .locals 2
+
+    .line 26
+    new-instance v0, Lcom/transsion/camera/app/common/ui/setting/PreferenceItemUI;
+
+    new-instance v1, Lcom/transsion/camera/ui/setting/videomute/VideoMuteSettingUISpec;
+
+    iget-object p0, p0, Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;->mResources:Landroid/content/res/Resources;
+
+    invoke-direct {v1, p0}, Lcom/transsion/camera/ui/setting/videomute/VideoMuteSettingUISpec;-><init>(Landroid/content/res/Resources;)V
+
+    invoke-direct {v0, v1}, Lcom/transsion/camera/app/common/ui/setting/PreferenceItemUI;-><init>(Lcom/transsion/camera/app/common/ui/setting/SettingUISpec;)V
+
+    return-object v0
+.end method
+
 .method public createTopBarItemUI()Lcom/transsion/camera/app/common/ui/setting/ITopBarItemUI;
     .locals 3
 

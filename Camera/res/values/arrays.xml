@@ -348,6 +348,7 @@
         <item>com.transsion.camera.ui.setting.videoduration.VideoDurationSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.liveresult.LiveResultSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videofps.VideoFPSSettingUIEntry</item>
+        <item>com.transsion.camera.ui.setting.videomute.VideoMuteSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videospeed.VideoSpeedSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.autofocusswitch.AutoFocusSwitchSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.eyedetection.EyeDetectionSettingUIEntry</item>
@@ -1698,6 +1699,7 @@
     <string-array name="video_mode_preference_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.shuttersound.ShutterSoundSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.autofocusswitch.AutoFocusSwitchSettingUIEntry</item>
+        <item>com.transsion.camera.ui.setting.videomute.VideoMuteSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.location.LocationSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videoquality.VideoQualitySettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.volumekey.VolumeKeySettingUIEntry</item>
