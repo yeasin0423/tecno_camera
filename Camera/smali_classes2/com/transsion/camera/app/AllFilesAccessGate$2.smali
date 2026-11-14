@@ -35,6 +35,8 @@
     .locals 1
 
     .line 8
+    invoke-static {}, Lcom/transsion/camera/app/AllFilesAccessGate;->markChoiceDone()V
+
     iget-object v0, p0, Lcom/transsion/camera/app/AllFilesAccessGate$2;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->recreate()V

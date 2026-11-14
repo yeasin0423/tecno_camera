@@ -4,7 +4,8 @@
 
 
 # static fields
-.field private static sPromptShown:Z
+.field private static sShown:Z
+.field private static sDone:Z
 
 
 # direct methods
@@ -24,13 +25,17 @@
 
     if-nez v2, :allow
 
-    sget-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sPromptShown:Z
+    sget-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sDone:Z
 
     if-nez v2, :allow
 
+    sget-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sShown:Z
+
+    if-nez v2, :block
+
     const/4 v2, 0x1
 
-    sput-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sPromptShown:Z
+    sput-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sShown:Z
 
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
@@ -68,8 +73,15 @@
 
     move-result-object v2
 
+    const/4 v0, 0x0
+
+    invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v2
+
     invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
+    :block
     const/4 p0, 0x1
 
     return p0
@@ -78,4 +90,15 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method public static markChoiceDone()V
+    .locals 1
+
+    .line 30
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lcom/transsion/camera/app/AllFilesAccessGate;->sDone:Z
+
+    return-void
 .end method

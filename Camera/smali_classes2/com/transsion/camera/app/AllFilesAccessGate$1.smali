@@ -35,6 +35,8 @@
     .locals 4
 
     .line 8
+    invoke-static {}, Lcom/transsion/camera/app/AllFilesAccessGate;->markChoiceDone()V
+
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.settings.MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"
