@@ -5326,7 +5326,7 @@
     .line 927
     invoke-virtual {p0, v2}, Landroidx/core/app/TaskStackBuilder;->addNextIntent(Landroid/content/Intent;)Landroidx/core/app/TaskStackBuilder;
 
-    const/high16 p1, 0x8000000
+    const/high16 p1, 0xc000000
 
     const/4 v2, 0x0
 
