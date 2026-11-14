@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private mPermissionManager:Lcom/transsion/camera/app/common/permission/PermissionManager;
+.field mPermissionManager:Lcom/transsion/camera/app/common/permission/PermissionManager;
 
 .field private mSecureCamera:Z
 
