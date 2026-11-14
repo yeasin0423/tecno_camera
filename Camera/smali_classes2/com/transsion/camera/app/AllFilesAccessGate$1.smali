@@ -1,6 +1,6 @@
 .class public Lcom/transsion/camera/app/AllFilesAccessGate$1;
 .super Ljava/lang/Object;
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 .source "AllFilesAccessGate.java"
 
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
 
     .line 8

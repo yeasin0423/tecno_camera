@@ -10,7 +10,7 @@
 
 # direct methods
 .method public static maybePrompt(Landroid/app/Activity;)Z
-    .locals 3
+    .locals 4
 
     .line 14
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -37,53 +37,67 @@
 
     sput-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sShown:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+    new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    move-result-object v0
+    invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0c00ff
+    const-string v1, "All files access"
 
-    const/4 v2, 0x0
+    invoke-virtual {v2, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    move-result-object v2
 
-    move-result-object v0
+    const-string v1, "Camera needs All files access so it can save videos and AR effects to storage. Tap Allow, then toggle it on."
 
-    const v1, 0x7f09028f
+    invoke-virtual {v2, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result-object v2
 
-    move-result-object v1
+    new-instance v1, Lcom/transsion/camera/app/AllFilesAccessGate$1;
 
-    new-instance v2, Lcom/transsion/camera/app/AllFilesAccessGate$1;
+    invoke-direct {v1, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$1;-><init>(Landroid/app/Activity;)V
 
-    invoke-direct {v2, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$1;-><init>(Landroid/app/Activity;)V
+    const-string v0, "Allow"
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f090290
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    new-instance v0, Lcom/transsion/camera/app/AllFilesAccessGate$2;
 
-    move-result-object v1
+    invoke-direct {v0, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$2;-><init>(Landroid/app/Activity;)V
 
-    new-instance v2, Lcom/transsion/camera/app/AllFilesAccessGate$2;
+    const-string v1, "Later"
 
-    invoke-direct {v2, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$2;-><init>(Landroid/app/Activity;)V
+    invoke-virtual {v2, v1, v0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    new-instance v1, Landroid/app/Dialog;
-
-    invoke-direct {v1, p0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v1, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
+    move-result-object v2
 
     const/4 v0, 0x0
 
-    invoke-virtual {v1, v0}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v3
+
+    const/16 v0, 0x50
+
+    invoke-virtual {v3, v0}, Landroid/view/Window;->setGravity(I)V
+
+    const/4 v0, -0x1
+
+    const/4 v1, -0x2
+
+    invoke-virtual {v3, v0, v1}, Landroid/view/Window;->setLayout(II)V
+
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     :block
     const/4 p0, 0x1
