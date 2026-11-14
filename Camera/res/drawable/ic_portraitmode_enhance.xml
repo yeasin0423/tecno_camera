@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="72.0dp" android:width="72.0dp" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_portraitmode_enhance__0" android:pathData="M20,33h32v8c0,8.8 -7.2,16 -16,16s-16,-7.2 -16,-16V33z" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M38.7,10c12.7,0 23,8.8 23.3,22.1l0,0.4V53c0,2.1 -1.6,3.9 -3.6,4l-0.2,0h-4.8v-4.1h4.7V33.6c0,-11.7 -8.9,-19.2 -20,-19.4l-0.3,0c-1.6,0 -2.8,0 -3.6,0c-2.9,0 -7.4,0 -13.3,0c-3.3,0 -5.9,2.7 -6,6.1l0,0.2v32.5h4.7V57h-4.8c-2,0 -3.7,-1.7 -3.8,-3.8l0,-0.2V20.3c0,-5.6 4.3,-10.2 9.6,-10.3l0.2,0c6,0 10.6,0 13.6,0C35.3,10 36.8,10 38.7,10z" android:strokeAlpha="0.3039" android:fillAlpha="0.3039" />
+    <path android:fillColor="#cccccc" android:pathData="M20.6,10l0.2,0l18,0l0,0c12.7,0 23,8.6 23.3,21.7l0,0.4V41h3v4H7v-4h4V20.1C11,14.6 15.3,10.1 20.6,10zM20.9,14c-3.3,0 -5.9,2.7 -6,6l0,0.2l0,20.8h43.2v-7.9c0,-11.5 -8.9,-18.9 -20,-19.1L20.9,14L20.9,14z" />
+</vector>

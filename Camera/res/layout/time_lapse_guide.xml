@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="18.0dp" android:paddingEnd="18.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="24.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/time_laps_video_mode_title" android:fontFamily="sans-serif-medium" />
+    <FrameLayout android:orientation="vertical" android:background="@drawable/ic_time_lapse_guide" android:layout_width="match_parent" android:layout_height="324.0dp" android:layout_marginTop="16.0dp">
+        <com.transsion.camera.app.ui.widget.AutoPlayVideoView android:layout_width="match_parent" android:layout_height="match_parent" app:video_id="@raw/time_lapse_guide_video_demo" />
+        <com.transsion.camera.app.ui.mode.video.RoundedCornerCover android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/guide_text_color" android:layout_gravity="bottom" android:background="@drawable/half_round_corner_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/time_laps_video_mode_guide" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/round_corner_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="22.0dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp">
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_auto" style="@style/TimeLapseText" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_15" style="@style/TimeLapseText" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_30" style="@style/TimeLapseText" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_60" style="@style/TimeLapseText" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="16.0dp" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp">
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_90" style="@style/TimeLapseText" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_120" style="@style/TimeLapseText" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:text="@string/video_time_lapse_rate_setting_entries_300" style="@style/TimeLapseText" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:background="@drawable/item_background" android:text="..." style="@style/TimeLapseText" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/guide_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="22.0dp" android:text="@string/time_laps_video_mode_guide_info" android:layout_marginHorizontal="26.0dp" />
+    </LinearLayout>
+</LinearLayout>

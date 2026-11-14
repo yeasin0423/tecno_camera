@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:layout_width="@dimen/focus_view_size" android:layout_height="@dimen/focus_view_size" android:drawable="@drawable/ic_focus_lock_outer" />
+    <item android:gravity="center" android:layout_width="@dimen/focus_lock_view_size" android:layout_height="@dimen/focus_lock_view_size" android:drawable="@drawable/ic_focus_lock_bg" />
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="9.0dp" android:insetBottom="9.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="18.0dp" />
+        <solid android:color="@color/os_search_solid_background_color" />
+        <padding android:left="32.0dp" android:right="32.0dp" />
+    </shape>
+</inset>

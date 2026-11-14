@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/google_lens_size" android:width="@dimen/google_lens_size" android:viewportWidth="120.0" android:viewportHeight="120.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:pivotX="60.0" android:pivotY="60.0" android:scaleX="0.8" android:scaleY="0.8">
+        <path android:fillColor="#ffffff" android:pathData="M37.4,66.4v6.4c0,5.3 4.4,9.7 9.7,9.7l0,0h6.4V89h-6.4C38.2,89 31,81.8 31,72.9l0,0v-6.4H37.4zM79.3,72.9c3.6,0 6.4,2.9 6.4,6.4c0,3.6 -2.9,6.4 -6.4,6.4c-3.6,0 -6.4,-2.9 -6.4,-6.4C72.9,75.8 75.8,72.9 79.3,72.9zM60,48.7c6.2,0 11.3,5 11.3,11.3s-5,11.3 -11.3,11.3s-11.3,-5 -11.3,-11.3S53.8,48.7 60,48.7zM72.9,31C81.8,31 89,38.2 89,47.1l0,0v6.4h-6.4v-6.4c0,-5.3 -4.3,-9.7 -9.7,-9.7l0,0h-6.4V31H72.9zM53.6,31v6.4h-6.4c-5.3,0 -9.7,4.4 -9.7,9.7v6.4H31v-6.4C31,38.2 38.2,31 47.1,31H53.6z" />
+    </group>
+</vector>

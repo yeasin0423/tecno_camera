@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_setting_title" android:key="pref_screen_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category_title_layout" android:title="@string/pref_common_category_title" android:key="pref_common_category">
+        <com.transsion.camera.ui.setting.enhancebrightness.EnhanceBrightnessSwitchPreference android:icon="@drawable/ic_screen_flash" android:layout="@layout/preference_switch_layout" android:title="@string/enhance_screen_brightness_title" android:key="key_enhance_screen_brightness" android:defaultValue="true" />
+    </PreferenceCategory>
+    <Preference android:layout="@layout/preference_category_divider" android:selectable="false" />
+    <PreferenceCategory android:layout="@layout/preference_category_title_layout" android:title="@string/pref_photo_category_title" android:key="pref_photo_category" />
+    <PreferenceCategory android:layout="@layout/preference_category_title_layout" android:title="@string/pref_video_category_title" android:key="pref_video_category" />
+</PreferenceScreen>

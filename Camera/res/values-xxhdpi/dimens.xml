@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_hint_root_height">520.0dp</dimen>
+    <dimen name="default_cursor_height">20.0dp</dimen>
+    <dimen name="default_cursor_round_corner">2.0px</dimen>
+    <dimen name="default_cursor_width">2.669983dp</dimen>
+    <dimen name="default_major_graduation_height">8.0dp</dimen>
+    <dimen name="default_major_graduation_width">2.669983dp</dimen>
+    <dimen name="default_minor_graduation_height">8.0dp</dimen>
+    <dimen name="default_minor_graduation_width">1.3299866dp</dimen>
+    <dimen name="os_seekbar_thumb_pressed_size">22.0dp</dimen>
+    <dimen name="super_moon_indicator_height">8.0dp</dimen>
+    <dimen name="super_moon_indicator_width">6.669983dp</dimen>
+    <dimen name="wideselfie_idle_arrow_marginTop">10.0dp</dimen>
+    <dimen name="wideselfie_notify_arrow_height">120.0dp</dimen>
+    <dimen name="wideselfie_notify_arrow_land_height">90.0dp</dimen>
+    <dimen name="wideselfie_notify_arrow_land_width">340.0dp</dimen>
+    <dimen name="wideselfie_notify_arrow_marginTop">39.0dp</dimen>
+    <dimen name="wideselfie_progressBarThumbHeight">194.0dp</dimen>
+    <dimen name="wideselfie_progressBarThumbHeight_land">90.0dp</dimen>
+    <dimen name="wideselfie_top_interval">35.0dp</dimen>
+    <dimen name="wideselfie_top_interval_land">40.0dp</dimen>
+</resources>

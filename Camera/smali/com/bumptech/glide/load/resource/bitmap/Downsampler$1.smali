@@ -1,0 +1,50 @@
+.class Lcom/bumptech/glide/load/resource/bitmap/Downsampler$1;
+.super Lcom/bumptech/glide/load/resource/bitmap/Downsampler;
+.source "Downsampler.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bumptech/glide/load/resource/bitmap/Downsampler;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 36
+    invoke-direct {p0}, Lcom/bumptech/glide/load/resource/bitmap/Downsampler;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getId()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "AT_LEAST.com.bumptech.glide.load.data.bitmap"
+
+    return-object p0
+.end method
+
+.method protected getSampleSize(IIII)I
+    .locals 0
+
+    .line 39
+    div-int/2addr p2, p4
+
+    div-int/2addr p1, p3
+
+    invoke-static {p2, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    return p0
+.end method

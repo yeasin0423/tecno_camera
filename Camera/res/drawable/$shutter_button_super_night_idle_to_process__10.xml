@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:duration="0" android:startOffset="@integer/super_night_capture_progress_duration">
+        <propertyValuesHolder android:valueFrom="0.0" android:valueTo="1.0" android:valueType="floatType" android:propertyName="scaleX" />
+        <propertyValuesHolder android:valueFrom="0.0" android:valueTo="1.0" android:valueType="floatType" android:propertyName="scaleY" />
+    </objectAnimator>
+    <objectAnimator android:interpolator="@anim/interpolator_custom" android:duration="800" android:startOffset="@integer/super_night_capture_progress_duration" android:repeatCount="infinite" android:repeatMode="restart" android:valueFrom="0" android:valueTo="360" android:propertyName="rotation" />
+</set>

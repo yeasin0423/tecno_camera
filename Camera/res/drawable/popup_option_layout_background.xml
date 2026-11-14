@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom" android:height="40.0dp">
+        <shape>
+            <corners android:radius="65535.0dp" />
+            <solid android:color="@color/popup_options_layout_background" />
+            <stroke android:width="@dimen/popup_option_stroke_width" android:color="@color/popup_option_stroke_color" />
+        </shape>
+    </item>
+</layer-list>

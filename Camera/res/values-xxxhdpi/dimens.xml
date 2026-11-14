@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_cursor_height">15.0dp</dimen>
+    <dimen name="default_cursor_round_corner">2.0px</dimen>
+    <dimen name="default_cursor_width">2.0dp</dimen>
+    <dimen name="default_major_graduation_height">6.0dp</dimen>
+    <dimen name="default_major_graduation_width">2.0dp</dimen>
+    <dimen name="default_minor_graduation_height">6.0dp</dimen>
+    <dimen name="default_minor_graduation_width">1.0dp</dimen>
+    <dimen name="super_moon_indicator_height">6.0dp</dimen>
+    <dimen name="super_moon_indicator_width">5.0dp</dimen>
+</resources>

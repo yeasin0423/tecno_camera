@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/arc_filter_root" android:paddingTop="@dimen/arc_filter_root_top_margin" android:paddingBottom="@dimen/arc_filter_root_bottom_margin" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/acr_filter_indicator_color" android:gravity="center" android:id="@id/arc_filter_indicator" android:background="@drawable/arc_filter_indicator_shape" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/arc_filter_indicator_bottom_margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+        <RelativeLayout android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/arc_filter_switcher_width" android:layout_alignParentBottom="true">
+            <com.transsion.camera.feature.arcfilter.setting.ui.ArcFilterSwitcher android:gravity="center_vertical" android:id="@id/arc_filter_switcher" android:background="@android:color/transparent" android:focusable="false" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/still_filter_fading_edge_length" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:requiresFadingEdge="horizontal">
+                <com.transsion.camera.feature.arcfilter.setting.ui.ArcFilterContainer android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/arc_filter_item_container" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="@dimen/arc_filter_contrainer_translate_x" />
+                <View android:layout_gravity="center" android:background="@drawable/arc_filter_selected_cover" android:focusable="false" android:layout_width="@dimen/arc_filter_cover_size" android:layout_height="@dimen/arc_filter_cover_size" />
+            </com.transsion.camera.feature.arcfilter.setting.ui.ArcFilterSwitcher>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

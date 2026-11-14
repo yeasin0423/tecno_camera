@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="120.0dp" android:width="120.0dp" android:viewportWidth="120.0" android:viewportHeight="120.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$flash_torch_auto_normal__0" android:pathData="M60,78c12,0 18,-6 18,-18H42C42,72 48,78 60,78z" />
+    <path android:fillColor="#ffffff" android:pathData="M71,82v4H49v-4H71zM60,39c11,0 20,9 20,20s-9,20 -20,20s-20,-9 -20,-20S49,39 60,39zM60,43c-8.8,0 -16,7.2 -16,16s7.2,16 16,16s16,-7.2 16,-16S68.8,43 60,43zM60,48c1.4,0 1.8,0.5 2.3,1.4C62.5,50 64.8,56.5 69,69h-2.6c-0.8,0 -1.5,-0.5 -1.7,-1.2l-1.4,-4.2h-6.6l-1.4,4.2c-0.2,0.7 -0.9,1.2 -1.7,1.2H51l6.8,-19.6C58,48.6 58.6,48 60,48zM91,58v4h-7v-4H91zM36,57v4h-7v-4H36zM60,53.5l-2.1,6.4h4.2L60,53.5zM38.4,36.1l4.9,4.9l-2.8,2.8l-4.9,-4.9L38.4,36.1zM81.6,36.1l2.8,2.8l-4.9,4.9L76.7,41L81.6,36.1zM62,29v6h-4v-6H62z" />
+</vector>

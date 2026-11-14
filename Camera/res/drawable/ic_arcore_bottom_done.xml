@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="180.0dp" android:width="180.0dp" android:viewportWidth="180.0" android:viewportHeight="180.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffffff" android:pathData="M90,90m-90,0a90,90 0,1 1,180 0a90,90 0,1 1,-180 0" />
+    <path android:fillColor="@drawable/$ic_arcore_bottom_done__0" android:pathData="M127.1,60.9l6.3,6.4l-51.6,51.1l-35.7,-35.6l6.4,-6.4l29.3,29.4z" />
+</vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/camera_switcher_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="camera_switcher_group" android:animation="@animator/animator_camera_switcher_group" />
+    <target android:name="camera_switcher_background" android:animation="@animator/animator_camera_switcher_background" />
+    <target android:name="camera_switcher_icon" android:animation="@animator/animator_camera_switcher_icon" />
+</animated-vector>

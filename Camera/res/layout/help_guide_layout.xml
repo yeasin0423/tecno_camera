@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/help_guide_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="right|center" android:id="@id/img_help_guide" android:focusable="false" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="@dimen/top_bar_guide_end_margin" android:src="@drawable/ic_guide_enter" android:scaleType="fitXY" />
+</LinearLayout>

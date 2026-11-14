@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar android:layout_width="match_parent" android:layout_height="@dimen/os_progress_height" android:max="100" android:paddingStart="@dimen/os_dialog_progress_padding" android:paddingEnd="@dimen/os_dialog_progress_padding" style="@style/OsProgressBarHorizontalStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

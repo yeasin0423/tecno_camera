@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/shutter_button_size" android:width="@dimen/shutter_button_size" android:viewportWidth="198.0" android:viewportHeight="198.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="video_view_group" android:pivotX="99.0" android:pivotY="99.0" android:scaleX="0.8" android:scaleY="0.8">
+        <path android:fillColor="#464646" android:pathData="@string/shutter_button_circle_198_96" android:fillAlpha="0.5" />
+        <path android:name="shutter_button_inside" android:fillColor="#eb2c2c" android:pathData="@string/shutter_button_inside_circle_198_72" />
+    </group>
+</vector>

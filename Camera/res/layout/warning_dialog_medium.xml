@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/id_warning_dialog_medium" android:background="@color/high_temperature_medium_bg_color" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/high_temperature_medium_icon_margin_top" android:src="@drawable/ic_high_temperature_medium" android:layout_marginStart="@dimen/high_temperature_medium_icon_margin_left" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/high_temperature_medium_title_margin_top" android:layout_marginBottom="@dimen/high_temperature_medium_title_margin_top" android:layout_marginStart="@dimen/high_temperature_medium_title_margin_left" android:layout_marginEnd="@dimen/high_temperature_medium_title_margin_left">
+        <TextView android:textSize="@dimen/high_temperature_medium_title_size" android:textColor="@color/high_temperature_medium_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high_temperature_medium_title" />
+        <TextView android:textSize="@dimen/high_temperature_medium_sub_title_size" android:textColor="@color/high_temperature_medium_sub_title_color" android:id="@id/id_warning_dialog_content" android:layout_width="@dimen/high_temperature_medium_content_width" android:layout_height="wrap_content" android:text="@string/high_temperature_medium_content" />
+    </LinearLayout>
+</LinearLayout>

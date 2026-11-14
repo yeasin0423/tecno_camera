@@ -1,0 +1,124 @@
+version: 3.0.3
+apkFileName: Camera.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 30
+  targetSdkVersion: 29
+versionInfo:
+  versionCode: 1
+  versionName: 7.1.01-ModByYeasin
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- dex
+- gif
+- mp3
+- mp4
+- ogg
+- png
+- assets/AI_model/ai_face_processor.bundle
+- assets/DocDetectV15.xbin
+- assets/FaceModelPlus/FC_A0_N_v1.m.bin
+- assets/FaceModelPlus/FD_J_N_v1.m.bin
+- assets/FaceModelPlus/FL_D_N_v1_i.m.bin
+- assets/FaceModelPlus/FL_D_N_v1_v.m.bin
+- assets/FaceModelPlus/SFC_C_n_v9.m.bin
+- assets/M_Segment_DoubleLoss_V1.model
+- assets/aiguo1213/aiguo1213.bundle
+- assets/aixinniao/aixinniao.bundle
+- assets/aixinyanjing/aixinyanjing.bundle
+- assets/aixinyanjingnan/aixinyanjingnan.bundle
+- assets/anim_model.bundle
+- assets/animation_idle.svga
+- assets/animation_idle_land.svga
+- assets/ardata_ex.bundle
+- assets/baimao/baimao.bundle
+- assets/bling/bling.bundle
+- assets/bluebird/bluebird.bundle
+- assets/boy_girl/feizhou_nan.bundle
+- assets/boy_girl/feizhou_nv.bundle
+- assets/butterfly/butterfly.bundle
+- assets/cap/cap.bundle
+- assets/chaonv/chaonv.bundle
+- assets/diwali/diwali.bundle
+- assets/double_aperture_anim.svga
+- assets/effect/forground/Disco/disco.bundle
+- assets/effect/forground/SmileAndTakePhotos/SmileAndTakePhotos.bundle
+- assets/effect/forground/SmileAndTakePhotos/config.json
+- assets/effect/forground/chuanyin2/chuanyin2.bundle
+- assets/effect/forground/chuanyin3/chuanyin3.bundle
+- assets/effect/forground/chuanyin4/chuanyin4.bundle
+- assets/effect/forground/chuanyin5/chuanyin5.bundle
+- assets/effect/forground/chuanyin6/chuanyin6.bundle
+- assets/effect/music/filtermusic2/filtermusic2.bundle
+- assets/effect/music/filtermusic3/filtermusic3.bundle
+- assets/effect/music/filtermusic4/filtermusic4.bundle
+- assets/effect/normal/Bunny/Bunny.bundle
+- assets/effect/normal/Freestyle/Freestyle.bundle
+- assets/effect/normal/KissYou/KissYou.bundle
+- assets/effect/normal/KissYou/config.json
+- assets/effect/normal/LittleStar/LittleStar.bundle
+- assets/effect/normal/PinkHeart/PinkHeart.bundle
+- assets/effect/normal/Singing/Singing.bundle
+- assets/effect/normal/facewarp1/facewarp1.bundle
+- assets/effect/normal/facewarp2/facewarp2.bundle
+- assets/effect/normal/facewarp3/FannyFace3.bundle
+- assets/enter_super_night_anim.svga
+- assets/erji/erji.bundle
+- assets/eye_focus.svga
+- assets/eye_focus1.svga
+- assets/eye_focus_weak.svga
+- assets/face_beautification.bundle
+- assets/future_warrior/future_warrior.bundle
+- assets/glasses/glasses.bundle
+- assets/hetun_animoji/hetun_animoji.bundle
+- assets/holi/holi.bundle
+- assets/huahuan/huahuan.bundle
+- assets/huangya_animoji/huangya_animoji.bundle
+- assets/hudie_lm_fu/hudie_lm_fu.bundle
+- assets/india_men/india_men.bundle
+- assets/india_women/india_women.bundle
+- assets/item0202/item0202.bundle
+- assets/item0205/item0205.bundle
+- assets/item0209/item0209.bundle
+- assets/kuloutou/kuloutou.bundle
+- assets/mode_picker_arrow_anim.svga
+- assets/mode_picker_arrow_min_anim.svga
+- assets/necklace/necklace.bundle
+- assets/progress_loading.svga
+- assets/qbaimao_zh_fu/qbaimao_zh_fu.bundle
+- assets/qingwa/qingwa.bundle
+- assets/red_s/red_s.bundle
+- assets/shizi/shizi.bundle
+- assets/shuita_animoji/shuita_animoji.bundle
+- assets/slimbody_preset_dot_in.svga
+- assets/slimbody_preset_dot_out.svga
+- assets/taidixiong/taidixiong.bundle
+- assets/tiara/tiara.bundle
+- assets/tie/tie.bundle
+- assets/tongue.bundle
+- assets/tuzi/tuzi.bundle
+- assets/whitebuckhorn/whitebuckhorn.bundle
+- assets/xiaohuangji_animoji/xiaohuangji_animoji.bundle
+- assets/xiaolu_animoji/xiaolu_animoji.bundle
+- assets/xiaweiyi/xiaweiyi.bundle
+- assets/yangtuo/yangtuo.bundle
+- assets/yo_man/yo_man.bundle
+- firebase-common.properties
+- firebase-iid-interop.properties
+- firebase-iid.properties
+- firebase-measurement-connector.properties
+- play-services-ads-identifier.properties
+- play-services-base.properties
+- play-services-basement.properties
+- play-services-measurement-api.properties
+- play-services-measurement-base.properties
+- play-services-measurement-impl.properties
+- play-services-measurement-sdk-api.properties
+- play-services-measurement-sdk.properties
+- play-services-measurement.properties
+- play-services-stats.properties
+- play-services-tasks.properties

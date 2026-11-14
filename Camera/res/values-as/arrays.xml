@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="focus_setting_entries">
+        <item>স্বচালিতভাৱে</item>
+        <item>নিৰন্তৰ-ছবি</item>
+        <item>"নিৰন্তৰ ভিডিঅ'"</item>
+        <item>edof</item>
+        <item>নিৰ্দিষ্ট</item>
+        <item>অসীম</item>
+        <item>মেক্ৰ</item>
+    </string-array>
+    <array name="guide_anti_video_layout_id">
+        <item>@layout/guide_anti_video_layout</item>
+    </array>
+    <array name="guide_video_portrait_id">
+        <item>@layout/guide_video_portrait_layout</item>
+    </array>
+    <string-array name="self_timer_setting_entries">
+        <item>বন্ধ</item>
+        <item>3ছেকেণ্ড</item>
+        <item>5ছেকেণ্ড</item>
+        <item>10ছেকেণ্ড</item>
+    </string-array>
+    <string-array name="video_time_lapse_setting_entries">
+        <item>@string/video_time_lapse_rate_setting_entries_auto</item>
+        <item>@string/video_time_lapse_rate_setting_entries_15</item>
+        <item>@string/video_time_lapse_rate_setting_entries_30</item>
+        <item>@string/video_time_lapse_rate_setting_entries_60</item>
+        <item>@string/video_time_lapse_rate_setting_entries_90</item>
+        <item>@string/video_time_lapse_rate_setting_entries_120</item>
+        <item>@string/video_time_lapse_rate_setting_entries_300</item>
+        <item>@string/video_time_lapse_rate_setting_entries_1200</item>
+        <item>@string/video_time_lapse_rate_setting_entries_5400</item>
+    </string-array>
+    <string-array name="volume_key_setting_entries">
+        <item>শ্বাটাৰ</item>
+        <item>জুম কৰক</item>
+    </string-array>
+</resources>

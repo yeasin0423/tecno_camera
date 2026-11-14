@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recording_root_group" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/recording_time" />
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/video_shutter_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/video_shutter_panel_height" android:layout_marginStart="@dimen/video_shutter_panel_margin" android:layout_marginEnd="@dimen/video_shutter_panel_margin">
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="start|center" android:id="@id/video_snap_shot" android:background="@drawable/ic_video_snap_shot" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:soundEffectsEnabled="false" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="end|center" android:id="@id/video_pause_resume" android:background="@drawable/ic_recording_pause" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:soundEffectsEnabled="false" />
+    </FrameLayout>
+    <View android:id="@id/video_snap_shot_cover" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

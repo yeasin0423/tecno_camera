@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="150.0dp" android:width="150.0dp" android:viewportWidth="150.0" android:viewportHeight="150.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_arcore_bottom_share__0" android:pathData="M75,75m-60,0a60,60 0,1 1,120 0a60,60 0,1 1,-120 0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M70.9,48.5V54H59.2c-3.4,0 -6.1,2.7 -6.2,6l0,0.2l0,35.4l37.6,0c3.3,0 6,-2.5 6.2,-5.8l0,-0.2l0,-0.2v-9.5h5.5v9.5c0,6.4 -5.1,11.6 -11.4,11.7l-0.3,0H52.5c-2.7,0 -4.9,-2.1 -5,-4.8l0,-0.2V60.2c0,-6.4 5.1,-11.6 11.4,-11.7l0.3,0H70.9zM97.3,48.5c2.7,0 4.9,2.1 5,4.8l0,0.2v15.1h-5.5l0,-10.7L75.1,79l-4.2,-4.3L92.2,54l-9.9,0v-5.5H97.3z" />
+</vector>

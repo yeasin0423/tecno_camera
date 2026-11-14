@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dp" android:width="48.0dp" android:autoMirrored="true" android:viewportWidth="144.0" android:viewportHeight="144.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_video_fb_1_on__0" android:pathData="M72,72m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0" />
+    <path android:fillColor="@drawable/$ic_video_fb_1_on__1" android:pathData="M72,120c-26.5,0 -48,-21.5 -48,-48s21.5,-48 48,-48s48,21.5 48,48S98.5,120 72,120zM72,28c-24.3,0 -44,19.7 -44,44s19.7,44 44,44s44,-19.7 44,-44S96.3,28 72,28L72,28z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_video_fb_1_on__2" android:pathData="M72.1,56H67c-1.1,0 -2,0.9 -2,2c0,1.1 0.9,2 2,2l5,0v26c0,1.1 0.9,2 2,2c1.1,0 2,-0.9 2,-2c0,0 0,0 0,0V59.9C76,57.8 74.2,56 72.1,56z" android:fillType="evenOdd" />
+</vector>

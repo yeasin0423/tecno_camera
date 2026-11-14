@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/still_filter_indicator_background" />
+    <corners android:radius="@dimen/still_filter_indicator_radius" />
+    <padding android:left="@dimen/still_filter_indicator_padding_left_or_right" android:right="@dimen/still_filter_indicator_padding_left_or_right" />
+</shape>

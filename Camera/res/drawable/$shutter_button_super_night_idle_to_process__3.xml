@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:interpolator="@anim/interpolator_common" android:duration="@integer/super_night_capture_progress_duration" android:startOffset="300"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <propertyValuesHolder android:valueType="floatType" android:propertyName="strokeAlpha">
+        <keyframe android:value="0" android:fraction="0.0" />
+        <keyframe android:value="1" android:fraction="0.05" />
+        <keyframe android:value="1" android:fraction="0.95" />
+        <keyframe android:value="0" android:fraction="1.0" />
+    </propertyValuesHolder>
+</objectAnimator>

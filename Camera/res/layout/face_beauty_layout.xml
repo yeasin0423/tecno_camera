@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/face_beauty_layout_root" android:layout_width="match_parent" android:layout_height="@dimen/face_beauty_layout_height" android:layout_marginTop="@dimen/face_beauty_layout_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/face_beauty_entry" android:focusable="false" android:clickable="true" android:layout_width="@dimen/face_beauty_entry_size" android:layout_height="@dimen/face_beauty_entry_size" android:layout_marginStart="@dimen/face_beauty_layout_margin_start">
+        <com.transsion.camera.app.ui.widget.RotateImageView android:id="@id/face_beauty_close" android:visibility="gone" android:layout_width="@dimen/face_beauty_item_size" android:layout_height="@dimen/face_beauty_item_size" />
+        <com.transsion.camera.ui.setting.facebeauty.FaceBeautyIconView android:id="@id/face_beauty_icon" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/face_beauty_normal_ai" />
+    </FrameLayout>
+    <com.transsion.camera.ui.setting.facebeauty.FaceBeautyLevelLayout android:layout_gravity="center_vertical" android:id="@id/face_beauty_level_list" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/face_beauty_item_size" android:paddingStart="@dimen/facebeauty_level_circle_paddingstart" />
+</LinearLayout>

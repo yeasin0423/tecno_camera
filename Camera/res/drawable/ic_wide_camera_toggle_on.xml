@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="144.0dp" android:width="144.0dp" android:viewportWidth="144.0" android:viewportHeight="144.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#464646" android:pathData="M72,72m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0" android:strokeAlpha="0.5021" android:fillAlpha="0.5021" />
+    <path android:fillColor="@drawable/$ic_wide_camera_toggle_on__0" android:pathData="M86,83c-2.8,-4.8 -8.3,-8 -14.6,-8c-6.2,0 -11.6,3.1 -14.4,7.6l4,3.7l4,2.7l4.6,4h2L86,83z" android:fillType="evenOdd" />
+    <path android:fillColor="#ffd800" android:pathData="M71.7,50c12.7,0 23.8,8 28,19.5l3.3,-2.3l2.5,3.4L73,94c-0.7,0.5 -1.6,0.5 -2.3,0.1L70.5,94L38,70.6l2.5,-3.4l3.3,2.3C47.9,58 59,50 71.7,50zM71.7,54.2c-11.3,0 -21.1,7.4 -24.4,17.9l24.4,17.6l24.4,-17.6C92.9,61.6 83.1,54.2 71.7,54.2z" />
+</vector>

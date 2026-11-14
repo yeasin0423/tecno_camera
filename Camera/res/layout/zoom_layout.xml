@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/zoom_ui_root_group" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.camera.ui.setting.zoom.StrokeTextView android:textSize="24.0sp" android:layout_gravity="center" android:id="@id/tv_stroke_current_zoom_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.transsion.camera.app.ui.widget.RotateTextView android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/tv_current_zoom_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.transsion.camera.ui.setting.zoom.SeekbarZoomView android:layout_gravity="end|center" android:id="@id/zoom_seekbar_layout" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.transsion.camera.ui.setting.zoom.StrokeTextView android:textSize="12.0sp" android:id="@id/tv_stroke_max_zoom_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+                <com.transsion.camera.app.ui.widget.RotateTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_max_zoom_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+            </FrameLayout>
+            <com.transsion.camera.ui.setting.exposure.VerticalSeekBar android:id="@id/zoom_seekbar" android:background="@drawable/zoom_seekbar_normal_camera_bg" android:visibility="visible" android:layout_width="@dimen/zoom_seek_bar_width" android:layout_height="@dimen/zoom_seek_bar_height" android:maxHeight="@dimen/zoom_seek_bar_progress_size" android:minHeight="@dimen/zoom_seek_bar_progress_size" android:thumb="@drawable/ic_zoom_scrubber" android:thumbOffset="@dimen/zoom_seekbar_thumbnail_offset_wide" android:paddingEnd="@dimen/zoom_seekbar_thumbnail_offset_wide" android:splitTrack="true" android:progressBackgroundTint="@android:color/transparent" />
+            <FrameLayout android:id="@id/tv_min_zoom_ratio_root" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.transsion.camera.ui.setting.zoom.StrokeTextView android:textSize="12.0sp" android:id="@id/tv_stroke_min_zoom_ratio" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+                <com.transsion.camera.app.ui.widget.RotateTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_min_zoom_ratio" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+            </FrameLayout>
+            <com.transsion.camera.app.ui.widget.RotateImageView android:id="@id/icon_wide_camera" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wide_camera_selector" />
+            <com.transsion.camera.app.ui.widget.RotateImageView android:id="@id/icon_macro_camera" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:src="@drawable/ic_macro_camera_selector" />
+        </LinearLayout>
+    </com.transsion.camera.ui.setting.zoom.SeekbarZoomView>
+</FrameLayout>

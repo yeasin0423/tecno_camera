@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/funvideo_review_group" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/funvideo_surface_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/funvideo_bottom_panel" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/funvideo_bottom_cancel" android:focusable="false" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_funvideo_bottom_cancel" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/funvideo_bottom_share" android:focusable="false" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_funvideo_bottom_share" android:layout_marginStart="@dimen/funvideo_bottom_panel_margin" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/funvideo_bottom_share_vskit" android:focusable="false" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_vskit_share" android:layout_marginStart="@dimen/funvideo_bottom_panel_margin" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/funvideo_bottom_done" android:focusable="false" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_funvideo_bottom_confirm" android:layout_marginStart="@dimen/funvideo_review_done_margin" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/arcore_bottom_panel" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/arcore_bottom_cancel" android:focusable="false" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_arcore_bottom_cancel" android:layout_marginStart="64.0dp" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/arcore_bottom_done" android:focusable="false" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/ic_arcore_bottom_done" android:layout_marginStart="36.0dp" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@id/arcore_bottom_share" android:focusable="false" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_arcore_bottom_share" android:layout_marginStart="41.0dp" />
+    </LinearLayout>
+</RelativeLayout>

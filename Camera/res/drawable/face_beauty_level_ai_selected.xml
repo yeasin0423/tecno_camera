@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/face_beauty_item_size" android:width="@dimen/face_beauty_item_size" android:viewportWidth="108.0" android:viewportHeight="108.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#fcd000" android:pathData="M 54 6 C 80.5096679919 6 102 27.4903320081 102 54 C 102 80.5096679919 80.5096679919 102         54 102 C 27.4903320081 102 6 80.5096679919 6 54 C 6 27.4903320081 27.4903320081 6 54 6 Z" />
+    <path android:fillColor="#ffffff" android:pathData="M69,69h-5v-6c0,0,0,0,0,0V41h5v12l0,0V69z         M53.9,59.3h-8.9V69H40V49.2c0.2-5.2,4.6-9.3,9.9-9.2         c5,0.2,9,4.2,9.2,9.2V69h-5.1V59.3z         M53.9,49.7c0-2-0.4-5.3-4.4-5.3c-4.2,0-4.4,3.3-4.4,5.3v4.8h8.9V49.7z" />
+</vector>

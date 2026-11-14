@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hint_root_group" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.transsion.camera.app.ui.widget.RotateLayout android:id="@id/common_hint_rotate" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/common_hint_root_height">
+        <FrameLayout android:id="@id/common_hint_root" android:paddingTop="@dimen/common_hint_Layout_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/always_hint_text_view" android:visibility="gone" style="@style/HintTextView" />
+            <TextView android:id="@id/auto_hide_hint_text_view" android:visibility="gone" style="@style/HintTextView" />
+            <include layout="@layout/asd_hint_layout" />
+            <include layout="@layout/super_night_guide_layout" />
+        </FrameLayout>
+    </com.transsion.camera.app.ui.widget.RotateLayout>
+    <com.transsion.camera.app.ui.widget.RotateLayout android:id="@id/process_rotate" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progress_hint_root" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:gravity="center" android:id="@id/hint_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" />
+            <com.opensource.svgaplayer.SVGAImageView android:gravity="center" android:id="@id/hint_progress_loading" android:focusable="false" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" app:autoPlay="false" app:source="progress_loading.svga" />
+            <TextView android:textColor="@android:color/white" android:id="@id/hint_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" />
+        </LinearLayout>
+    </com.transsion.camera.app.ui.widget.RotateLayout>
+</FrameLayout>

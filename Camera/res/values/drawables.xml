@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_anti_video_icon">@drawable/ic_anti_video_on</drawable>
+    <drawable name="ic_flash_icon">@drawable/ic_flash_auto</drawable>
+    <drawable name="ic_hdr_icon">@drawable/ic_hdr_on</drawable>
+    <drawable name="ic_super_night_stable">@drawable/super_night_stable_on</drawable>
+    <drawable name="ic_video_fps_icon">@drawable/ic_video_fps_120</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+</resources>

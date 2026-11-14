@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_self_timer__0" android:pathData="M21.1,60l14.9,-14.4l17,14.4z" />
+    <path android:fillColor="#cccccc" android:pathData="M15,63v-4h4v-5.5c0,-6.7 3.8,-12.6 9.4,-15.5c-5.6,-2.9 -9.4,-8.8 -9.4,-15.5V16h-4v-4h42v4h-3v6.5c0,6.7 -3.8,12.6 -9.4,15.5c5.5,2.9 9.2,8.6 9.4,15.1l0,0.4V59h3v4H15zM36.5,40c-7.4,0 -13.3,5.9 -13.5,13.2l0,0.3V59h27v-5.5c0,-7.2 -5.7,-13.2 -12.9,-13.5l-0.3,0L36.5,40zM50,16H23v6.5C23,30 29,36 36.5,36l0.3,0C44.1,35.8 50,29.9 50,22.5V16z" />
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/aperture_circle_view" android:layout_width="@dimen/aperture_rect_width" android:layout_height="@dimen/aperture_rect_height" style="@style/ApertureCircleForScreenFlash">
+        <View android:layout_gravity="center" android:background="@drawable/ic_screen_flash_aperture_view" android:layout_width="@dimen/aperture_circle_width" android:layout_height="@dimen/aperture_circle_height" />
+    </FrameLayout>
+    <View android:layout_gravity="center" android:background="@drawable/screen_flash_drawable" android:layout_width="@dimen/screen_flash_size" android:layout_height="@dimen/screen_flash_size" />
+</FrameLayout>

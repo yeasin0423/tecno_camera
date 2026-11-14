@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/shutter_button_time_lapse_recording"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="shutter_button_inside" android:animation="@drawable/$shutter_button_time_lapse_idle_to_recording__0" />
+    <target android:name="video_outside_group" android:animation="@drawable/$shutter_button_time_lapse_idle_to_recording__1" />
+    <target android:name="video_outside_group" android:animation="@drawable/$shutter_button_time_lapse_idle_to_recording__2" />
+    <target android:name="shutter_button_outside" android:animation="@drawable/$shutter_button_time_lapse_idle_to_recording__3" />
+</animated-vector>

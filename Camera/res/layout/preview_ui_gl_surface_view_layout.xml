@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.camera.app.ui.opengl.GLPreviewView android:id="@id/preview_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/preview_aux_ui_texture_view_layout" />
+    <View android:id="@id/aux_preview_expand" android:background="@drawable/ic_aux_preview_expand" android:visibility="gone" android:layout_width="@dimen/aux_preview_expand_width" android:layout_height="@dimen/aux_preview_expand_height" />
+    <View android:id="@id/preview_content_cover" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

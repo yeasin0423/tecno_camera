@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/wide_camera_layer_root" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.transsion.camera.app.ui.widget.ScrollFrameLayout android:id="@id/top_bar_layout_root" android:layoutDirection="ltr" style="@style/TopBarLayout" />
+    <com.transsion.camera.app.ui.widget.ScrollFrameLayout android:id="@id/mode_picker_layout_root" android:layoutDirection="ltr" style="@style/ModePickerLayout" />
+    <com.transsion.camera.app.ui.widget.ScrollFrameLayout android:id="@id/bottombar_root" android:layoutDirection="ltr" style="@style/ShutterPanelLayout">
+        <FrameLayout android:id="@id/shutter_panel_layout_root" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false" />
+    </com.transsion.camera.app.ui.widget.ScrollFrameLayout>
+</merge>

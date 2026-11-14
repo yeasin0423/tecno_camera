@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dp" android:width="32.0dp" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_asd_food__0" android:pathData="M50,40.5c16,0 11,-6.6 11,-13.1s-22,-6.5 -22,0S34,40.5 50,40.5z" />
+    <path android:fillColor="#ffffff" android:pathData="M24,13v25h6V13c2.2,0 4,1.8 4,4v21c0,2.2 -1.8,4 -4,4h-6v20h-4V42h-6c-2.2,0 -4,-1.8 -4,-4V17c0,-2.2 1.8,-4 4,-4v25h6V13H24zM50,11c7.1,0 13,7.4 13,16c0,1.9 0,3.9 0,6c0,5.5 -4.4,9.9 -9.9,10c-0.7,0 -1,0 -1.1,0v19h-4V43c-0.1,0 -0.4,0 -1.1,0c-5.5,-0.1 -9.9,-4.5 -9.9,-10c0,-2 0,-4 0,-6C37,18.4 42.9,11 50,11zM50,15c-4.6,0 -9,5.4 -9,12c0,2 0,4 0,6c0,3.3 2.7,6 6,6c1,0 2,0 3,0s2,0 3,0c3.3,0 6,-2.7 6,-6c0,-2 0,-4 0,-6C59,20.4 54.6,15 50,15z" />
+</vector>

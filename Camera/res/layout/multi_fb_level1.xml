@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/face_beauty_v2_level1" android:layout_width="match_parent" android:layout_height="wrap_content" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="96.0dp" android:layout_marginStart="@dimen/multi_fb_rootview_margin" android:layout_marginEnd="@dimen/multi_fb_rootview_margin">
+        <com.transsion.camera.app.ui.widget.RotateImageView android:id="@id/face_beauty_v2_switch_icon" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/multi_fb_entry_size" android:layout_height="@dimen/multi_fb_entry_size" android:src="@drawable/ic_multi_fb_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <com.transsion.camera.ui.setting.multifacebeauty.ui.MultiCustomSeekBar android:id="@id/face_beauty_v2_seek_bar" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="15.0dp" android:visibility="invisible" android:layout_width="264.0dp" android:layout_height="84.0dp" android:maxHeight="2.0dp" android:minHeight="2.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.transsion.camera.app.ui.widget.RotateImageView android:id="@id/face_beauty_v2_compare_icon" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/multi_fb_entry_size" android:layout_height="@dimen/multi_fb_entry_size" android:src="@drawable/ic_multi_fb_compare_selector" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

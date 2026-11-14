@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="96.0dp" android:width="96.0dp" android:viewportWidth="96.0" android:viewportHeight="96.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_time_lapse_mode__0" android:pathData="M48,83c19.3,0 35,-15.7 35,-35S67.3,13 48,13" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_time_lapse_mode__1" android:pathData="M83.5,48.5c0,19.3 -15.7,35 -35,35s-35,-15.7 -35,-35" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffff" android:pathData="M48,11.5c20.2,0 36.5,16.3 36.5,36.5S68.2,84.5 48,84.5c-20,0 -36.2,-16 -36.5,-35.9l0,-0.6h5c0,17.4 14.1,31.5 31.5,31.5S79.5,65.4 79.5,48c0,-17.2 -13.8,-31.2 -31,-31.5l-0.5,0V11.5zM48,21l3.9,28.5c0.3,2.1 -1.2,4.1 -3.4,4.4c-0.2,0 -0.4,0 -0.5,0c-2.2,0 -3.9,-1.8 -3.9,-3.9c0,-0.2 0,-0.4 0,-0.5L48,21zM13.3,37.2l4.8,1.5c-0.4,1.3 -0.7,2.5 -0.9,3.9L17,43.2L12,42.4c0.2,-1.5 0.6,-3 1,-4.5L13.3,37.2zM18,27.5l4.1,2.8c-0.7,1.1 -1.4,2.2 -2,3.4l-0.3,0.6l-4.5,-2.2c0.7,-1.4 1.4,-2.7 2.3,-4L18,27.5zM25.2,19.6l3.1,3.9c-1,0.8 -2,1.7 -2.9,2.7L25,26.7l-3.7,-3.4c1,-1.1 2.2,-2.2 3.3,-3.2L25.2,19.6zM34.5,14.2l1.9,4.6c-1.2,0.5 -2.4,1.1 -3.6,1.7l-0.6,0.3l-2.5,-4.3c1.3,-0.8 2.7,-1.5 4.1,-2.1L34.5,14.2zM44.9,11.7l0.4,5c-1.3,0.1 -2.6,0.3 -3.8,0.6l-0.8,0.2l-1.2,-4.9c1.5,-0.4 3,-0.6 4.5,-0.8L44.9,11.7z" android:fillType="evenOdd" />
+</vector>

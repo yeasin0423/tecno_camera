@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dp" android:width="48.0dp" android:viewportWidth="120.0" android:viewportHeight="120.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:pivotX="60.0" android:pivotY="60.0" android:scaleX="0.9" android:scaleY="0.9">
+        <path android:fillColor="@drawable/$flash_off_selected_pressed__0" android:pathData="M49.5,50.6l-10.6,12c-0.7,0.8 -0.6,2.1 0.2,2.8C39.5,65.8 39.9,66 40.4,66L59,66l-3.3,17.4c-0.1,0.5 0.3,1.1 0.8,1.2c0.3,0.1 0.7,-0.1 0.9,-0.3l9.1,-10.4l3,-3.4" />
+        <path android:fillColor="#ffd800" android:pathData="M38.9,40.2l45,40.7l-2.7,3L69.6,73.4L68.1,75l-8.7,9.9c-0.7,0.8 -1.7,1.1 -2.7,0.9c-1.5,-0.3 -2.5,-1.7 -2.3,-3.2l0,-0.2l2.7,-14.4l-15.4,0c-0.8,0 -1.7,-0.3 -2.3,-0.8l-0.2,-0.1c-1.5,-1.3 -1.7,-3.6 -0.5,-5.2L39,61.8l7.8,-9L36.2,43.1L38.9,40.2zM61.5,66.1l-2.6,13.7l6.4,-7.3l1.5,-1.7L61.5,66.1zM64.2,34.2c1.5,0.3 2.5,1.7 2.3,3.2l0,0l-1.1,14.1l13.7,0.4c0.8,0 1.7,0.3 2.3,0.8l0.2,0.1c1.6,1.4 1.7,3.8 0.3,5.4L75.1,66l-2.9,-2.5l6.8,-7.8l0,0l0,0l-0.1,0l-17.7,-0.6l1.2,-15.4l-7.7,8.9l-2.9,-2.5l9.6,-11C62.2,34.3 63.2,34 64.2,34.2zM49.7,55.4l-7.8,8.9l0,0l0,0l17.7,0L49.7,55.4z" />
+    </group>
+</vector>

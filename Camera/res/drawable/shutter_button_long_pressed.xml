@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="100.0dp" android:width="100.0dp" android:viewportWidth="300.0" android:viewportHeight="300.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="shutter_long_scale_out" android:pivotX="150.0" android:pivotY="150.0" android:scaleX="1.0" android:scaleY="1.0">
+        <path android:name="shutter_long_alpha_out" android:fillColor="#464646" android:pathData="M150,150m-96,0a96,96 0,1 1,192 0a96,96 0,1 1,-192 0" android:fillAlpha="0.5" />
+    </group>
+    <path android:name="shutter_long_loading" android:pathData="    M297,3    m-147,0    a147,147 0 1,1 0,294    a147,147 0 1,1 0,-294" android:strokeColor="#00ffd800" android:strokeWidth="6.0" />
+    <group android:name="shutter_button_scale_in" android:pivotX="150.0" android:pivotY="150.0" android:scaleX="0.9" android:scaleY="0.9">
+        <path android:name="shutter_long_alpha_in" android:fillColor="#ffffff" android:pathData="M150,150m-80,0a80,80 0,1 1,160 0a80,80 0,1 1,-160 0" android:fillAlpha="0.6" />
+    </group>
+</vector>

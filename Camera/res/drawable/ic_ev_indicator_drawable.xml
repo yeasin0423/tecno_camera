@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/focus_view_size" android:width="@dimen/focus_view_size" android:viewportWidth="216.0" android:viewportHeight="216.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="indicator_frame_group" android:pivotX="108.0" android:pivotY="108.0">
+        <path android:name="indicator_frame" android:fillColor="#ffffff" android:pathData="M210,109.1c-0.6,55.4-45.4,100.2-100.8,100.8c0,0-0.1,0-0.1,0h-1 C52.1,210,6.6,165,6,109.1c0,0,0-0.1,0-0.1v-1C6,51.7,51.7,6,108,6h1c0,0,0.1,0,0.1,0C165,6.6,210,52.1,210,108v1 C210,109,210,109.1,210,109.1z M110,9v11c0,0.6-0.4,1-1,1h-1c-0.6,0-1-0.4-1-1V9C53.1,9.6,9.6,53.1,9,107h11c0.6,0,1,0.4,1,1v1 c0,0.6-0.4,1-1,1H9c1.1,53.5,44.5,96.4,98,97v-11c0-0.6,0.4-1,1-1h1c0.6,0,1,0.4,1,1v10.9c53.1-1.1,95.9-43.9,97-96.9h-11 c-0.6,0-1-0.4-1-1v-1c0-0.6,0.4-1,1-1h11C206.4,53.5,163.5,10.1,110,9z" />
+    </group>
+</vector>

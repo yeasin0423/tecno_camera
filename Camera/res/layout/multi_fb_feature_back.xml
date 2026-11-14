@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/feature_back" android:layout_width="@dimen/multi_fb_preset_layout_item_size" android:layout_height="match_parent" android:layout_marginRight="@dimen/multi_fb_feature_back_item_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/ic_multi_fb_right_background" android:layout_width="@dimen/multi_fb_custom_bar_width" android:layout_height="@dimen/multi_fb_custom_bar_height" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/item_icon" android:background="@drawable/ic_multi_fb_arrow_right" android:layout_width="@dimen/multi_fb_custom_bar_width" android:layout_height="@dimen/multi_fb_custom_bar_height" android:src="@drawable/ic_multi_fb_feature_back_on" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

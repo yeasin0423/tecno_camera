@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/asd_hint_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/asd_hint_algorith_result_layout" style="@style/HintAsdLayout">
+        <ImageView android:id="@id/asd_hint_algorith_result_img" style="@style/HintAsdImageView" />
+        <TextView android:id="@id/asd_hintalgorith_result_text" style="@style/HintAsdTextView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/asd_hint_effect_layout" android:layout_marginStart="@dimen/asd_hint_effect_gap" android:layout_toEndOf="@id/asd_hint_algorith_result_layout" style="@style/HintAsdLayout">
+        <ImageView android:id="@id/asd_hint_effect_img" style="@style/HintAsdImageView" />
+        <TextView android:id="@id/asd__effect_hint_text" style="@style/HintAsdTextView" />
+    </LinearLayout>
+</RelativeLayout>

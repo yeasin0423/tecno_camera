@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/super_night_guide_root" style="@style/superNightGuide"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/super_night_guide_img" style="@style/superNightGuide_img" />
+    <TextView android:id="@id/super_night_guide_tx" style="@style/superNightGuide_tx" />
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/super_night_guide_anim" app:source="enter_super_night_anim.svga" style="@style/superNightGuide_anim_indicator" />
+</RelativeLayout>

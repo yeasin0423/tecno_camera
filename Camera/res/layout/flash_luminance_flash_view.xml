@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/flash_adjust" android:background="@drawable/ic_flash_adjust_bg" android:layout_width="@dimen/flash_luminance_adjust_view_width" android:layout_height="@dimen/flash_luminance_adjust_view_height" android:layout_marginLeft="@dimen/flash_luminance_adjust_view_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/flash_luminance_adjust_progress" android:paddingTop="@dimen/flash_luminance_adjust_progress_top_padding" android:layout_width="@dimen/flash_luminance_adjust_progress_width" android:layout_height="@dimen/flash_luminance_adjust_progress_height" android:layout_marginTop="@dimen/flash_luminance_adjust_progress_margin_top" android:max="100" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/ic_flash_progress" />
+    <com.transsion.camera.ui.setting.flash.FlashIndicatorView android:id="@id/flash_adjust_icon" android:layout_width="@dimen/flash_indicator_view_width" android:layout_height="@dimen/flash_indicator_view_height" android:layout_marginBottom="@dimen/flash_indicator_view_margin_bottom" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/shutter_button_super_night_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="shutter_button_background" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__0" />
+    <target android:name="shutter_button_circle_inside" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__1" />
+    <target android:name="shutter_button_circle_outside" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__2" />
+    <target android:name="shutter_button_outside_progress_background" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__3" />
+    <target android:name="shutter_button_outside_progress_border" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__4" />
+    <target android:name="shutter_button_circle_outside_path_1" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__5" />
+    <target android:name="shutter_button_circle_outside_path_2" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__6" />
+    <target android:name="shutter_button_circle_outside_path_1" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__7" />
+    <target android:name="shutter_button_circle_outside_path_2" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__8" />
+    <target android:name="shutter_button_circle_outside_highlight" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__9" />
+    <target android:name="shutter_button_circle_outside_highlight" android:animation="@drawable/$shutter_button_super_night_idle_to_process_long__10" />
+</animated-vector>

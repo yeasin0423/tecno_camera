@@ -1,0 +1,62 @@
+.class public Lcom/transsion/camera/ui/setting/widecamera/FrontMultiplePersonSettingUIEntry;
+.super Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;
+.source "FrontMultiplePersonSettingUIEntry.java"
+
+
+# static fields
+.field private static final KEY:Ljava/lang/String; = "front_wide_camera"
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/res/Resources;)V
+    .locals 0
+
+    .line 15
+    invoke-direct {p0, p1}, Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;-><init>(Landroid/content/res/Resources;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public createTopBarItemUI()Lcom/transsion/camera/app/common/ui/setting/ITopBarItemUI;
+    .locals 4
+
+    .line 20
+    new-instance v0, Lcom/transsion/camera/ui/setting/widecamera/WideCameraTopBarItemUI;
+
+    iget-object v1, p0, Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;->mResources:Landroid/content/res/Resources;
+
+    new-instance v2, Lcom/transsion/camera/ui/setting/widecamera/WideCameraSettingTopBarUISpec;
+
+    const-string v3, "front_wide_camera"
+
+    invoke-direct {v2, v3, v1}, Lcom/transsion/camera/ui/setting/widecamera/WideCameraSettingTopBarUISpec;-><init>(Ljava/lang/String;Landroid/content/res/Resources;)V
+
+    invoke-direct {v0, v1, v2}, Lcom/transsion/camera/ui/setting/widecamera/WideCameraTopBarItemUI;-><init>(Landroid/content/res/Resources;Lcom/transsion/camera/app/common/ui/setting/SettingUISpec;)V
+
+    iput-object v0, p0, Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;->mITopBarItemUI:Lcom/transsion/camera/app/common/ui/setting/ITopBarItemUI;
+
+    return-object v0
+.end method
+
+.method public createWideCameraItemUI()Lcom/transsion/camera/app/common/ui/setting/IWideCameraItemUI;
+    .locals 4
+
+    .line 26
+    new-instance v0, Lcom/transsion/camera/ui/setting/widecamera/FrontMultiplePersonSettingUI;
+
+    new-instance v1, Lcom/transsion/camera/ui/setting/widecamera/FrontMultiplePersonSettingUISpec;
+
+    iget-object v2, p0, Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;->mResources:Landroid/content/res/Resources;
+
+    const-string v3, "front_wide_camera"
+
+    invoke-direct {v1, v3, v2}, Lcom/transsion/camera/ui/setting/widecamera/FrontMultiplePersonSettingUISpec;-><init>(Ljava/lang/String;Landroid/content/res/Resources;)V
+
+    iget-object p0, p0, Lcom/transsion/camera/app/common/provider/SettingUIEntryBase;->mResources:Landroid/content/res/Resources;
+
+    invoke-direct {v0, v1, p0}, Lcom/transsion/camera/ui/setting/widecamera/FrontMultiplePersonSettingUI;-><init>(Lcom/transsion/camera/app/common/ui/setting/SettingUISpec;Landroid/content/res/Resources;)V
+
+    return-object v0
+.end method

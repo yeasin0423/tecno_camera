@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="144.0dp" android:width="144.0dp" android:viewportWidth="144.0" android:viewportHeight="144.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#464646" android:pathData="M72,72m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0" android:strokeAlpha="0.5021" android:fillAlpha="0.5021" />
+    <path android:fillColor="@drawable/$ic_video_fb_icon__0" android:pathData="M54.6,71h34.7v9.5c0,9.6 -7.8,17.4 -17.4,17.4s-17.4,-7.8 -17.4,-17.4V71L54.6,71z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_video_fb_icon__1" android:pathData="M74.4,46c13.2,0 24.4,9.5 24.6,23.1l0,0.4l-0.1,20.6c0,2.2 -1.7,3.9 -3.7,4l-0.2,0H90V90h4.8L95,70.5c0,-11.9 -9.7,-20.2 -21.2,-20.4l-0.3,0H56.3c-3.4,0 -6.2,2.8 -6.3,6.3l0,0.2l0.1,33.2H55V94h-4.9c-2.1,0 -3.8,-1.7 -3.9,-3.9l0,-0.2L46,56.5c0,-5.7 4.4,-10.4 9.9,-10.5l0.2,0H74.4zM63.4,62.3l0.5,2.5c0.5,2.5 2.3,4.5 4.6,5.1l2.4,0.7l-2.1,0.3c-2.6,0.4 -4.7,2.4 -5.3,5l-0.5,2.1l-0.4,-1.9c-0.5,-2.7 -2.7,-4.8 -5.3,-5.2l-1.8,-0.3l2.7,-0.8c2.2,-0.7 3.9,-2.5 4.4,-4.8L63.4,62.3z" />
+</vector>

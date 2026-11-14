@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/face_detecion_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.transsion.camera.feature.mode.armode.FaceDetectionView android:id="@id/face" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr" />
+    <com.transsion.camera.feature.mode.armode.FaceDetectionView android:id="@id/face_" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr" />
+</FrameLayout>

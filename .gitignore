@@ -1,0 +1,21 @@
+# Signing keys — never commit
+*.jks
+*.keystore
+*.p12
+
+# Built / original APKs (GitHub 100MB file limit; binaries stay local)
+*.apk
+*.aab
+
+# apktool framework resource dir (Android 11 framework-res, proprietary; see AGENTS.md)
+frame/
+
+# apktool build output
+build/
+Camera/build/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~

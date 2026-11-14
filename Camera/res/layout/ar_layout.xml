@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ar_recording_time" />
+    <RelativeLayout android:id="@id/sticker_root" android:layout_width="match_parent" android:layout_height="@dimen/ar_root_height">
+        <RelativeLayout android:id="@id/recycler_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ar_recyclerview_height" android:layout_alignParentBottom="true">
+            <com.transsion.camera.app.ui.mode.armode.HorizontalRecycleView android:orientation="horizontal" android:id="@id/recycler_ar" android:layout_width="match_parent" android:layout_height="@dimen/ar_icon_wh" android:layout_marginTop="@dimen/ar_recyclerview_margintop" android:layout_marginBottom="@dimen/ar_recyclerview_marginbottom" android:layout_alignParentBottom="true" android:alpha="0.0" android:translationY="@dimen/ar_diff" app:ItemMargin="0.0dp" app:ItemWidth="@dimen/ar_icon_wh" />
+            <ImageView android:id="@id/sticker_select" android:layout_width="@dimen/ar_icon_wh" android:layout_height="@dimen/ar_icon_wh" android:layout_marginTop="@dimen/ar_recyclerview_margintop" android:layout_marginBottom="@dimen/ar_recyclerview_marginbottom" android:src="@drawable/sticker_select" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.0" android:translationY="@dimen/ar_diff" />
+            <ImageView android:id="@id/animoji_select" android:layout_width="@dimen/animoji_select_w" android:layout_height="@dimen/animoji_select_h" android:src="@drawable/animoji_select" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ar_switch_layout" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="@dimen/ar_type_padding_start">
+            <ImageView android:id="@id/sticker_switch" android:background="@drawable/ar_sticker_type_select" android:focusable="false" android:layout_width="@dimen/ar_type_width" android:layout_height="@dimen/ar_type_height" android:layout_marginTop="@dimen/ar_padding" android:layout_marginBottom="@dimen/ar_padding" android:src="@drawable/ic_sticker" />
+            <ImageView android:id="@id/animoji_switch" android:background="@drawable/ar_emoji_type_bg" android:focusable="false" android:layout_width="@dimen/ar_type_width" android:layout_height="@dimen/ar_type_height" android:layout_marginTop="@dimen/ar_padding" android:layout_marginBottom="@dimen/ar_padding" android:src="@drawable/ic_emoji" android:layout_marginStart="@dimen/ar_type_padding" />
+            <RelativeLayout android:gravity="center_vertical" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ar_type_padding" android:layout_marginEnd="@dimen/ar_padding">
+                <ImageView android:id="@id/emoji_copy" android:focusable="false" android:layout_width="@dimen/ar_anmoji_copy_wh" android:layout_height="@dimen/ar_anmoji_copy_wh" android:src="@drawable/ic_gif_copy" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

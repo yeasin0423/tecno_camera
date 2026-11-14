@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_shutter_sound__0" android:pathData="M49,53c8.8,0 16,-7.2 16,-16s-7.2,-16 -16,-16" />
+    <path android:fillColor="#cccccc" android:pathData="M41,10.5c2.1,0 3.9,1.7 4,3.8v0.2v43.9c0,0.8 -0.2,1.5 -0.6,2.1c-1.1,1.8 -3.5,2.4 -5.3,1.3l-0.2,-0.1L20.4,50H12c-2.2,0 -4,-1.8 -4,-4V26c0,-2.2 1.8,-4 4,-4h8.5L39,11.1c0.5,-0.3 1.1,-0.5 1.8,-0.5L41,10.5zM41,14.5L23,25.1v21.8l18,11.5V14.5zM49,19c9.9,0 18,8.1 18,18c0,9.8 -7.9,17.8 -17.7,18H49v-4c7.7,0 14,-6.3 14,-14c0,-7.6 -6.1,-13.8 -13.7,-14H49V19zM19,26h-7v20h7V26z" />
+</vector>

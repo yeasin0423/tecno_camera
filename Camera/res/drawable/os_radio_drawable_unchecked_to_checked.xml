@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/os_radio_drawable_start_unchecked"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="v" android:animation="@anim/os_radio_animator_unchecked_to_checked" />
+</animated-vector>
