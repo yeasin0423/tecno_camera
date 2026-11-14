@@ -22,9 +22,11 @@ project, is the source of truth.
 - apktool does **not** sign. Sign `test.apk` before installing:
   `apksigner sign --ks my-key.jks test.apk` (key alias/password known to user;
   `my-key.jks` is gitignored — never commit it).
-- Install: `adb install -r test.apk`. Device shows up as a plain adb device.
-- Verification = clean `apktool b` + sign + install + launch the app.
-  There are **no tests, linters, formatters or CI**. Builds are heavy
+- Install: `adb install -r test.apk` — **never run `adb` yourself** (any
+  subcommand); if something on-device is needed, ask the user to run it or
+  supply details.
+- There are **no tests, linters, formatters or CI**. Verification = clean
+  `apktool b` + sign + (user) install + launch the app. Builds are heavy
   (`-Xmx3G`, ~2 threads); expect minutes, and full rebuilds every time.
 - SDK levels are **not** in the manifest (it has no `<uses-sdk>`); they are in
   `Camera/apktool.yml` under `sdkInfo` (currently `minSdkVersion: 30`,
@@ -77,7 +79,10 @@ project, is the source of truth.
   limit, and `frame/1.apk` is proprietary), and `build/` / `Camera/build/`.
 - Committed tree ≈ 440M of binaries (assets/lib/smali) tracked in plain git —
   no LFS; keep GitHub's 100MB/file limit in mind if adding large files.
-- No remote configured yet. After creating the GitHub repo:
-  `git remote add origin <url> && git push -u origin main`.
+- Remote: `origin` → github.com/yeasin0423/tecno_camera (`main` tracks
+  `origin/main`, pushed). GitHub warns that
+  `Camera/lib/arm64-v8a/libstfaceunlockppl.so` (~52M) exceeds the 50M
+  recommended size — it is already committed; only migrate to LFS with the
+  user's explicit go-ahead.
 - `frame/`, `my-key.jks`, and the APKs exist only on this machine; a fresh
   clone cannot build until `frame/1.apk` is supplied and the APKs are rebuilt.
