@@ -57,14 +57,18 @@ project, is the source of truth.
 - Hand-edited smali compiles against Android 11 framework signatures. After any
   smali edit: rebuild → sign → install → launch. Build errors surface only at
   build time; behavioral breakage surfaces only at runtime.
-- **DEX ID limit**: `classes.dex` is already near an unsigned-short (65536)
-  index boundary. Adding any new method/field to `CameraActivity.smali` makes
-  the dex writer crash with `Unsigned short value out of range: 65536`. Put
-  new logic in its own class (see `OnBackInvokedCallbackImpl`) rather than
-  growing big existing classes. When the build fails like this, do not trust
-  cached `Camera/build/` output — wipe it (`rm -rf Camera/build`) and rebuild
-  with `apktool b` (clean/fresh only); incremental builds can reuse a stale
-  `classes.dex`.
+- **DEX ID limit**: `classes.dex` is already at the unsigned-short (65536) id
+  boundary. Adding ANY new method/field/type reference to it makes the dex
+  writer crash with `Unsigned short value out of range: 65536` (sometimes
+  intermittently, sometimes only on a clean build — always do
+  `rm -rf Camera/build` before declaring a build good). Put new code in its
+  own class in **`smali_classes2/` (classes2.dex)** — it has headroom — instead
+  of `smali/`. See `smali_classes2/com/transsion/camera/app/OnBackInvokedCallbackImpl.smali`.
+- Predictive back is wired via `Activity.getOnBackInvokedDispatcher()` +
+  `OnBackInvokedDispatcher.registerOnBackInvokedCallback(PRIORITY_DEFAULT=0)`
+  in `OnBackInvokedCallbackImpl.registerBackCallback`. Note
+  `Window.setOnBackInvokedCallback` does NOT exist on the runtime framework
+  (hidden/system API) — calling it crashes at launch with `NoSuchMethodError`.
 - Predictive back is wired for `CameraActivity` (incl. subclasses like
   `SecureCameraActivity`) and `ReviewCameraActivity`: both register a window
   `OnBackInvokedCallback` (`OnBackInvokedCallbackImpl`, priority 0) that
