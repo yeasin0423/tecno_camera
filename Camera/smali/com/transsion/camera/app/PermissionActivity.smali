@@ -458,21 +458,18 @@
     .line 140
     iput-object p1, p0, Lcom/transsion/camera/app/PermissionActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
-    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
-
-    move-result v1
-
-    if-eqz v1, :continue_create
-
-    return-void
-
-    :continue_create
     .line 147
     invoke-virtual {v0}, Lcom/transsion/camera/app/common/permission/PermissionManager;->checkCameraLaunchPermissions()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :done_create
+
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v1
+
+    if-nez v1, :done_create
 
     .line 148
     invoke-virtual {p0, p1}, Lcom/transsion/camera/app/PermissionActivity;->onCreateTasks(Landroid/os/Bundle;)V
@@ -482,7 +479,7 @@
     .line 149
     iput p1, p0, Lcom/transsion/camera/app/PermissionActivity;->mActivityState:I
 
-    :cond_0
+    :done_create
     return-void
 .end method
 
@@ -545,15 +542,6 @@
 .method protected onPermissionResumeTasks()V
     .locals 2
 
-    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
-
-    move-result v0
-
-    if-eqz v0, :continue_resume
-
-    return-void
-
-    :continue_resume
     .line 170
     iget-boolean v0, p0, Lcom/transsion/camera/app/PermissionActivity;->mIsDialogShow:Z
 
@@ -576,7 +564,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :gate_resume
 
     .line 176
     invoke-virtual {p0}, Lcom/transsion/camera/app/PermissionActivity;->canShowPermissionsDialog()Z
@@ -597,6 +585,13 @@
     return-void
 
     .line 180
+    :gate_resume
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
     :cond_2
     iget v0, p0, Lcom/transsion/camera/app/PermissionActivity;->mActivityState:I
 
@@ -629,15 +624,6 @@
 .method protected onPermissionStartTasks()V
     .locals 2
 
-    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
-
-    move-result v0
-
-    if-eqz v0, :continue_start
-
-    return-void
-
-    :continue_start
     .line 159
     iget-object v0, p0, Lcom/transsion/camera/app/PermissionActivity;->mPermissionManager:Lcom/transsion/camera/app/common/permission/PermissionManager;
 
@@ -645,7 +631,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :gate_start
 
     .line 160
     invoke-virtual {p0}, Lcom/transsion/camera/app/PermissionActivity;->canShowPermissionsDialog()Z
@@ -667,9 +653,19 @@
     return-void
 
     .line 166
+    :gate_start
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0_gate_blocked
+
     :cond_0
     invoke-virtual {p0}, Lcom/transsion/camera/app/PermissionActivity;->onStartTasks()V
 
+    return-void
+
+    :cond_0_gate_blocked
     return-void
 .end method
 
