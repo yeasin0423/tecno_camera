@@ -37,49 +37,53 @@
 
     sput-boolean v2, Lcom/transsion/camera/app/AllFilesAccessGate;->sShown:Z
 
-    new-instance v2, Landroid/app/AlertDialog$Builder;
+    invoke-virtual {p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
-    invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    move-result-object v0
 
-    const-string v1, "All files access"
+    const v1, 0x7f0c00ff
 
-    invoke-virtual {v2, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    const/4 v2, 0x0
 
-    move-result-object v2
+    invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const-string v1, "Camera needs All files access so it can save videos and AR effects to storage. Tap Allow, then toggle it on."
+    move-result-object v0
 
-    invoke-virtual {v2, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    const v1, 0x7f09028f
 
-    move-result-object v2
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    new-instance v1, Lcom/transsion/camera/app/AllFilesAccessGate$1;
+    move-result-object v1
 
-    invoke-direct {v1, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$1;-><init>(Landroid/app/Activity;)V
+    new-instance v2, Lcom/transsion/camera/app/AllFilesAccessGate$1;
 
-    const-string v0, "Allow"
+    invoke-direct {v2, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$1;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {v2, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    move-result-object v2
+    const v1, 0x7f090290
 
-    new-instance v0, Lcom/transsion/camera/app/AllFilesAccessGate$2;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-direct {v0, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$2;-><init>(Landroid/app/Activity;)V
+    move-result-object v1
 
-    const-string v1, "Later"
+    new-instance v2, Lcom/transsion/camera/app/AllFilesAccessGate$2;
 
-    invoke-virtual {v2, v1, v0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-direct {v2, p0}, Lcom/transsion/camera/app/AllFilesAccessGate$2;-><init>(Landroid/app/Activity;)V
 
-    move-result-object v2
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    new-instance v1, Landroid/app/Dialog;
+
+    invoke-direct {v1, p0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v1, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
     const/4 v0, 0x0
 
-    invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v0}, Landroid/app/Dialog;->setCancelable(Z)V
 
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
 
     :block
     const/4 p0, 0x1

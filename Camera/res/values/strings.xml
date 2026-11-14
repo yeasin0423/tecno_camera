@@ -536,4 +536,8 @@ Double click on the screen to wake up"</string>
     <string name="zoom_out_switch_normal">Zoom out again to cancel wide-angle effect</string>
     <string name="zoom_setting_title">Zoom</string>
     <string name="enhance_screen_brightness_title">Max screen brightness</string>
+    <string name="all_files_title">All files access</string>
+    <string name="all_files_message">Camera needs All files access to save your videos and AR creations to storage. You only need to turn it on once — you can change it anytime in Settings.</string>
+    <string name="all_files_allow">Allow</string>
+    <string name="all_files_later">Not now</string>
 </resources>
