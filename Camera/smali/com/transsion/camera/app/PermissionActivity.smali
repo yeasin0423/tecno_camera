@@ -448,15 +448,6 @@
 .method protected onPermissionCreateTasks(Landroid/os/Bundle;)V
     .locals 2
 
-    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
-
-    move-result v0
-
-    if-eqz v0, :continue_create
-
-    return-void
-
-    :continue_create
     .line 139
     new-instance v0, Lcom/transsion/camera/app/common/permission/PermissionManager;
 
@@ -467,6 +458,15 @@
     .line 140
     iput-object p1, p0, Lcom/transsion/camera/app/PermissionActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v1
+
+    if-eqz v1, :continue_create
+
+    return-void
+
+    :continue_create
     .line 147
     invoke-virtual {v0}, Lcom/transsion/camera/app/common/permission/PermissionManager;->checkCameraLaunchPermissions()Z
 
@@ -629,6 +629,15 @@
 .method protected onPermissionStartTasks()V
     .locals 2
 
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v0
+
+    if-eqz v0, :continue_start
+
+    return-void
+
+    :continue_start
     .line 159
     iget-object v0, p0, Lcom/transsion/camera/app/PermissionActivity;->mPermissionManager:Lcom/transsion/camera/app/common/permission/PermissionManager;
 
