@@ -175,6 +175,8 @@
     .line 53
     invoke-virtual {p0, p1}, Landroidx/activity/ComponentActivity;->setContentView(I)V
 
+    invoke-static {p0}, Lcom/transsion/camera/app/OnBackInvokedCallbackImpl;->registerBackCallback(Landroid/app/Activity;)V
+
     .line 55
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 

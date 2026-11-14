@@ -2915,6 +2915,8 @@
     .line 370
     invoke-virtual {v10, v1}, Landroidx/activity/ComponentActivity;->setContentView(I)V
 
+    invoke-static {v10}, Lcom/transsion/camera/app/OnBackInvokedCallbackImpl;->registerBackCallback(Landroid/app/Activity;)V
+
     const-string v1, "setContentView()"
 
     .line 371
