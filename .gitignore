@@ -7,8 +7,7 @@
 *.apk
 *.aab
 
-# apktool framework resource dir (Android 11 framework-res, proprietary; see AGENTS.md)
-frame/
+# (frame/ is tracked on user's request - Android 11 framework-res, proprietary)
 
 # apktool build output
 build/
