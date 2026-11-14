@@ -1715,6 +1715,18 @@
         <item>com.transsion.camera.ui.setting.nighthawk.NightHawkSettingUIEntry</item>
     </string-array>
     <array name="video_mode_side_bar_setting_ui_entries" />
+    <string-array name="video_mute_setting_entries">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <array name="video_mute_setting_entry_drawables">
+        <item>@drawable/ic_video_mute_off</item>
+        <item>@drawable/ic_video_mute_on</item>
+    </array>
+    <string-array name="video_mute_setting_entry_values">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
     <string-array name="video_mode_top_bar_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.settingsentry.SettingsEntrySettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.flash.VideoFlashSettingUIEntry</item>
@@ -1723,6 +1735,7 @@
         <item>com.transsion.camera.ui.setting.videoportrait.VideoPortraitSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.antivideo.AntiVideoSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videoquality.VideoQualitySettingUIEntry</item>
+        <item>com.transsion.camera.ui.setting.videomute.VideoMuteSettingUIEntry</item>
     </string-array>
     <string-array name="video_mode_zoom_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.zoom.SecondZoomSettingUIEntry</item>

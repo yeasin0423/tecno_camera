@@ -6696,4 +6696,10 @@
     <public type="xml" name="editor_preferences" id="0x7f130001" />
     <public type="xml" name="shortcuts" id="0x7f130002" />
     <public type="string" name="permission_allow" id="0x7f0f023d" />
+    <public type="string" name="video_mute_setting_title" id="0x7f0f023e" />
+    <public type="array" name="video_mute_setting_entries" id="0x7f030105" />
+    <public type="array" name="video_mute_setting_entry_drawables" id="0x7f030106" />
+    <public type="array" name="video_mute_setting_entry_values" id="0x7f030107" />
+    <public type="drawable" name="ic_video_mute_off" id="0x7f08070e" />
+    <public type="drawable" name="ic_video_mute_on" id="0x7f08070f" />
 </resources>

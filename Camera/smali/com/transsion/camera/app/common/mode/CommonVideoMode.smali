@@ -3362,7 +3362,7 @@
 .end method
 
 .method protected setMediaInfo(Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;)V
-    .locals 0
+    .locals 3
 
     if-eqz p1, :cond_0
 
@@ -3373,9 +3373,30 @@
 
     invoke-virtual {p1, p0}, Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;->setVideoOrientation(I)Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;
 
+    .line 655
+    iget-object v0, p0, Lcom/transsion/camera/app/common/mode/CameraMode;->mSettingController:Lcom/transsion/camera/app/common/setting/ISettingManager$SettingController;
+
     const/4 p0, 0x1
 
-    .line 655
+    if-eqz v0, :cond_1
+
+    const-string v1, "key_video_mute"
+
+    invoke-interface {v0, v1}, Lcom/transsion/camera/app/common/setting/ISettingManager$SettingController;->queryValue(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "on"
+
+    invoke-static {v2, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    const/4 p0, 0x0
+
+    :cond_1
     invoke-virtual {p1, p0}, Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;->setAudioFlag(Z)Lcom/transsion/camera/app/common/mode/VideoFileInfo$Builder;
 
     :cond_0

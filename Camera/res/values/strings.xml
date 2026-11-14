@@ -537,4 +537,5 @@ Double click on the screen to wake up"</string>
     <string name="zoom_setting_title">Zoom</string>
     <string name="enhance_screen_brightness_title">Max screen brightness</string>
     <string name="permission_allow">Allow</string>
+    <string name="video_mute_setting_title">Video mute</string>
 </resources>
