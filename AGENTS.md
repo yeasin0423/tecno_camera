@@ -57,6 +57,12 @@ project, is the source of truth.
 - Hand-edited smali compiles against Android 11 framework signatures. After any
   smali edit: rebuild → sign → install → launch. Build errors surface only at
   build time; behavioral breakage surfaces only at runtime.
+- Android 14+ (targetSdk 34+): every `registerReceiver()` needs an explicit
+  `RECEIVER_EXPORTED`/`RECEIVER_NOT_EXPORTED` flag or the app crashes with
+  `SecurityException`. All app-reachable sites use `RECEIVER_NOT_EXPORTED`
+  (they only handle system broadcasts). Dead Firebase/GMS/Crashlytics sites
+  were deliberately not touched — verify deadness with the manifest (no init
+  ContentProviders) before assuming any library code runs.
 - Permissions are referenced in smali, not only the manifest. Whenever a
   permission is added/removed, grep the whole tree (`grep -rn "<perm>" Camera`)
   and migrate call sites (`checkSelfPermission` lists, request lists, dialog
