@@ -1,10 +1,10 @@
-.class public Lcom/transsion/camera/app/OnBackInvokedCallbackImpl$1;
+.class public Lcom/transsion/camera/app/AllFilesAccessGate$1;
 .super Ljava/lang/Object;
 .implements Landroid/content/DialogInterface$OnClickListener;
-.source "OnBackInvokedCallbackImpl.java"
+.source "AllFilesAccessGate.java"
 
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/transsion/camera/app/OnBackInvokedCallbackImpl;
+    value = Lcom/transsion/camera/app/AllFilesAccessGate;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
     .locals 0
 
     .line 8
-    iput-object p1, p0, Lcom/transsion/camera/app/OnBackInvokedCallbackImpl$1;->mActivity:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/transsion/camera/app/AllFilesAccessGate$1;->mActivity:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/transsion/camera/app/OnBackInvokedCallbackImpl$1;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/transsion/camera/app/AllFilesAccessGate$1;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
 
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/transsion/camera/app/OnBackInvokedCallbackImpl$1;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/transsion/camera/app/AllFilesAccessGate$1;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 

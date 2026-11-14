@@ -446,8 +446,17 @@
 .end method
 
 .method protected onPermissionCreateTasks(Landroid/os/Bundle;)V
-    .locals 1
+    .locals 2
 
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v0
+
+    if-eqz v0, :continue_create
+
+    return-void
+
+    :continue_create
     .line 139
     new-instance v0, Lcom/transsion/camera/app/common/permission/PermissionManager;
 
@@ -536,6 +545,15 @@
 .method protected onPermissionResumeTasks()V
     .locals 2
 
+    invoke-static {p0}, Lcom/transsion/camera/app/AllFilesAccessGate;->maybePrompt(Landroid/app/Activity;)Z
+
+    move-result v0
+
+    if-eqz v0, :continue_resume
+
+    return-void
+
+    :continue_resume
     .line 170
     iget-boolean v0, p0, Lcom/transsion/camera/app/PermissionActivity;->mIsDialogShow:Z
 
