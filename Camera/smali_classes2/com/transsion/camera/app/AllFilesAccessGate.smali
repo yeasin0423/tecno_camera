@@ -10,7 +10,7 @@
 
 # direct methods
 .method public static maybePrompt(Landroid/app/Activity;)Z
-    .locals 7
+    .locals 5
 
     .line 14
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -53,29 +53,7 @@
 
     invoke-virtual {v2, v0}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "camera_function_permission_head"
-
-    invoke-static {v0, v1}, Lcom/transsion/camera/utils/CameraUtil;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v6, 0x1
-
-    new-array v5, v6, [Ljava/lang/String;
-
-    const-string v6, "All files"
-
-    const/4 v3, 0x0
-
-    aput-object v6, v3, v5
-
-    invoke-static {v0, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
+    const-string v0, "For normal use, this function should be allowed permission to All files."
 
     invoke-virtual {v2, v0}, Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Lcom/transsion/widgetslib/dialog/PromptDialog$Builder;
 
