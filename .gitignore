@@ -6,6 +6,8 @@
 # Built / original APKs (GitHub 100MB file limit; binaries stay local)
 *.apk
 *.aab
+# ...except the Android 11 framework resource APK, needed for builds (user request)
+!frame/1.apk
 
 # (frame/ is tracked on user's request - Android 11 framework-res, proprietary)
 
