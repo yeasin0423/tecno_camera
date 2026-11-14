@@ -30,7 +30,7 @@
 
     if-lt v3, v2, :skip_predictive_back
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Activity;->getOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
 
     move-result-object v0
 
@@ -40,7 +40,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2, v1}, Landroid/view/Window;->setOnBackInvokedCallback(ILandroid/window/OnBackInvokedCallback;)V
+    invoke-virtual {v0, v2, v1}, Landroid/window/OnBackInvokedDispatcher;->registerOnBackInvokedCallback(ILandroid/window/OnBackInvokedCallback;)V
 
     :skip_predictive_back
     return-void
