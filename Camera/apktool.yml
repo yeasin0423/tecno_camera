@@ -4,8 +4,8 @@ usesFramework:
   ids:
   - 1
 sdkInfo:
-  minSdkVersion: 30
-  targetSdkVersion: 30
+  minSdkVersion: 33
+  targetSdkVersion: 33
 versionInfo:
   versionCode: 2
   versionName: 7.2.00-ModByYeasin
