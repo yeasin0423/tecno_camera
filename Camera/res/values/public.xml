@@ -5525,7 +5525,6 @@
     <public type="string" name="circle_fill_width_198_radius_36" id="0x7f0f008e" />
     <public type="string" name="circle_fill_width_198_radius_80" id="0x7f0f008f" />
     <public type="string" name="clear_text_end_icon_content_description" id="0x7f0f0091" />
-    <public type="string" name="com.crashlytics.android.build_id" id="0x7f0f0092" />
     <public type="string" name="common_google_play_services_enable_button" id="0x7f0f0093" />
     <public type="string" name="common_google_play_services_enable_text" id="0x7f0f0094" />
     <public type="string" name="common_google_play_services_enable_title" id="0x7f0f0095" />
@@ -5579,7 +5578,6 @@
     <public type="string" name="feb" id="0x7f0f00c8" />
     <public type="string" name="filter_continuous_shot_not_supported" id="0x7f0f00c9" />
     <public type="string" name="fingerprint_capture_setting_title" id="0x7f0f00ca" />
-    <public type="string" name="firebase_database_url" id="0x7f0f00cb" />
     <public type="string" name="flash_adjust_tips" id="0x7f0f00cc" />
     <public type="string" name="flash_continuous_shot_not_supported" id="0x7f0f00cd" />
     <public type="string" name="flash_default_value" id="0x7f0f00ce" />

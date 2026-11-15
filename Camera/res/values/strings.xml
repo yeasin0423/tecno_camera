@@ -137,7 +137,6 @@ Double click on the screen to wake up"</string>
     <string name="circle_fill_width_198_radius_36">M99,99 m-36,0 a36,36 0,1 1,72 0 a36,36 0,1 1,-72 0 z</string>
     <string name="circle_fill_width_198_radius_80">M99,99 m-80,0 a80,80 0,1 1,160 0 a80,80 0,1 1,-160 0 z</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
-    <string name="com.crashlytics.android.build_id">c133862a-b882-46f4-9a03-b99bdbc625c4</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -191,7 +190,6 @@ Double click on the screen to wake up"</string>
     <string name="feb">Feb</string>
     <string name="filter_continuous_shot_not_supported">Filter</string>
     <string name="fingerprint_capture_setting_title">Fingerprint sensor as a shutter</string>
-    <string name="firebase_database_url">https://transsioncamera.firebaseio.com</string>
     <string name="flash_adjust_tips">Slide up and down to adjust the brightness of the flash</string>
     <string name="flash_continuous_shot_not_supported">Flash</string>
     <string name="flash_default_value">auto</string>

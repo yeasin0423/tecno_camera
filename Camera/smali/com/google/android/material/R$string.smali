@@ -283,7 +283,6 @@
 
 .field public static final clear_text_end_icon_content_description:I = 0x7f0f0091
 
-.field public static final com_crashlytics_android_build_id:I = 0x7f0f0092
 
 .field public static final common_google_play_services_enable_button:I = 0x7f0f0093
 
@@ -391,7 +390,6 @@
 
 .field public static final fingerprint_capture_setting_title:I = 0x7f0f00ca
 
-.field public static final firebase_database_url:I = 0x7f0f00cb
 
 .field public static final flash_adjust_tips:I = 0x7f0f00cc
 
