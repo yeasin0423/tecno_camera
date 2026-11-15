@@ -60,16 +60,7 @@
 
     iput-object p7, p0, Lcom/transsion/camera/app/common/mode/FilterHookMode;->mFilterCallback:Lcom/transsion/camera/app/common/mode/IFilterProcessor;
 
-    new-array p7, v0, [Ljava/lang/Object;
-
-    const-string v0, "com.transsion.camera.feature.asdenhance.ASDEnhance"
-
-    .line 44
-    invoke-static {v0, p7}, Lcom/transsion/camera/utils/ReflectionUtils;->instance(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p7
-
-    check-cast p7, Lcom/transsion/camera/app/common/mode/IFilterDataPreviewCallback;
+    const/4 p7, 0x0
 
     iput-object p7, p0, Lcom/transsion/camera/app/common/mode/FilterHookMode;->mAsdEnhanceFilterCallback:Lcom/transsion/camera/app/common/mode/IFilterDataPreviewCallback;
 

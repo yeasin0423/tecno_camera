@@ -30,7 +30,7 @@
 
     sput-object v0, Lcom/transsion/camera/utils/debug/Log;->TAG:Lcom/transsion/camera/utils/debug/Log$Tag;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 26
     sput-boolean v0, Lcom/transsion/camera/utils/debug/Log;->sDebugLogEnable:Z

@@ -49,38 +49,12 @@
 
     iput-object p1, p0, Lcom/transsion/camera/app/ui/manager/SuperNightFilterUIManager;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const/4 p1, 0x1
-
-    new-array p3, p1, [Ljava/lang/Object;
-
-    const/4 p4, 0x0
-
-    aput-object p2, p3, p4
-
-    const-string p5, "com.transsion.camera.feature.supernightfilter.ui.SuperNightFilterSettingUI"
-
     .line 32
-    invoke-static {p5, p3}, Lcom/transsion/camera/utils/ReflectionUtils;->instance(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 p1, 0x0
 
-    move-result-object p3
-
-    check-cast p3, Lcom/transsion/camera/app/common/ui/setting/ICommonSettingUI;
-
-    iput-object p3, p0, Lcom/transsion/camera/app/ui/manager/SuperNightFilterUIManager;->mSettingUI:Lcom/transsion/camera/app/common/ui/setting/ICommonSettingUI;
-
-    new-array p1, p1, [Ljava/lang/Object;
-
-    aput-object p2, p1, p4
-
-    const-string p2, "com.transsion.camera.feature.supernightfilter.ui.TopItemSuperNightFilterUI"
+    iput-object p1, p0, Lcom/transsion/camera/app/ui/manager/SuperNightFilterUIManager;->mSettingUI:Lcom/transsion/camera/app/common/ui/setting/ICommonSettingUI;
 
     .line 33
-    invoke-static {p2, p1}, Lcom/transsion/camera/utils/ReflectionUtils;->instance(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/transsion/camera/app/common/ui/setting/ITopBarItemUI;
-
     iput-object p1, p0, Lcom/transsion/camera/app/ui/manager/SuperNightFilterUIManager;->mTopBarItemUI:Lcom/transsion/camera/app/common/ui/setting/ITopBarItemUI;
 
     return-void

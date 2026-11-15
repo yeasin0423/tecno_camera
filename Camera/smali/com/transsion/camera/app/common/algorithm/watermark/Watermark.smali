@@ -41,25 +41,15 @@
 .end method
 
 .method private constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const-string v1, "com.transsion.camera.feature.watermark.WatermarkImpl"
-
     .line 29
-    invoke-static {v1, v0}, Lcom/transsion/camera/utils/ReflectionUtils;->instance(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 p1, 0x0
 
-    move-result-object v0
-
-    check-cast v0, Lcom/transsion/camera/app/common/algorithm/watermark/IWatermark;
-
-    iput-object v0, p0, Lcom/transsion/camera/app/common/algorithm/watermark/Watermark;->mWatermarkImpl:Lcom/transsion/camera/app/common/algorithm/watermark/IWatermark;
+    iput-object p1, p0, Lcom/transsion/camera/app/common/algorithm/watermark/Watermark;->mWatermarkImpl:Lcom/transsion/camera/app/common/algorithm/watermark/IWatermark;
 
     return-void
 .end method
