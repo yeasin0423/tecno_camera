@@ -145,6 +145,7 @@
         <item>com.transsion.camera.feature.setting.focus.FocusEntry</item>
         <item>com.transsion.camera.feature.setting.selftimer.SelfTimerEntry</item>
         <item>com.transsion.camera.feature.setting.shuttersound.ShutterSoundEntry</item>
+        <item>com.transsion.camera.feature.setting.videomute.VideoMuteEntry</item>
         <item>com.transsion.camera.feature.setting.zoom.ZoomEntry</item>
         <item>com.transsion.camera.feature.setting.facedetection.FaceDetectionEntry</item>
         <item>com.transsion.camera.feature.setting.humandetection.HumanDetectionEntry</item>
@@ -1737,7 +1738,6 @@
         <item>com.transsion.camera.ui.setting.videoportrait.VideoPortraitSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.antivideo.AntiVideoSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videoquality.VideoQualitySettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.videomute.VideoMuteSettingUIEntry</item>
     </string-array>
     <string-array name="video_mode_zoom_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.zoom.SecondZoomSettingUIEntry</item>
