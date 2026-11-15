@@ -76,8 +76,6 @@
         <item>com.transsion.camera.ui.setting.distortioncorrection.DistortionCorrectionSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.screenflash.ScreenFlashSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.mirror.MirrorSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.aigroupphoto.AIGroupPhotoSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.horizonswitchwide.HorizonSwitchWideSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.picturesize.PictureSizeSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.selftimer.SelfTimerSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.smiledetection.SmileDetectionSettingUIEntry</item>
@@ -92,7 +90,6 @@
         <item>com.transsion.camera.ui.setting.BarcodeSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.fingerprintcapture.FingerprintCaptureSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.restore.RestoreSettingsUIEntry</item>
-        <item>com.transsion.camera.ui.setting.MicroPanTiltCalibration.MicroPanTiltCalibrationUIEntry</item>
     </string-array>
     <string-array name="asd_mode_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.asd.AsdSettingUIWithGuideEntry</item>
@@ -186,7 +183,6 @@
         <item>com.transsion.camera.feature.setting.distortioncorrection.DistortionCorrectionEntry</item>
         <item>com.transsion.camera.feature.setting.macro.MacroEntry</item>
         <item>com.transsion.camera.feature.arcfilter.setting.ArcFilterEntry</item>
-        <item>com.transsion.camera.feature.supernightfilter.setting.SuperNightFilterEntry</item>
         <item>com.transsion.camera.feature.setting.fakeduallens.FakeDualLensEntry</item>
         <item>com.transsion.camera.feature.setting.googlelens.GoogleLensEntry</item>
         <item>com.transsion.camera.feature.setting.stblur.STBlurEntry</item>
@@ -200,16 +196,12 @@
         <item>com.transsion.camera.feature.setting.videofacebeauty.VideoFaceBeautyEntry</item>
         <item>com.transsion.camera.feature.setting.videoportrait.VideoPortraitEntry</item>
         <item>com.transsion.camera.feature.setting.videoportraitlevel.VideoPortraitLevelEntry</item>
-        <item>com.transsion.camera.feature.setting.aigroupphoto.AIGroupPhotoEntry</item>
-        <item>com.transsion.camera.feature.setting.horizonswitchwide.HorizonSwitchWideEntry</item>
-        <item>com.transsion.camera.feature.setting.algorithmmigrate.AlgorithmMigrateEntry</item>
         <item>com.transsion.camera.feature.setting.iso.ISOEntry</item>
         <item>com.transsion.camera.feature.setting.exposuretime.ExposureTimeEntry</item>
         <item>com.transsion.camera.feature.setting.meteringmode.MeteringModeEntry</item>
         <item>com.transsion.camera.feature.setting.manualfocus.ManualFocusEntry</item>
         <item>com.transsion.camera.feature.setting.smartdenoise.SmartDenoiseEntry</item>
         <item>com.transsion.camera.feature.setting.bv.BrightnessValueEntry</item>
-        <item>com.transsion.camera.feature.setting.superresolution.SuperResolutionEntry</item>
         <item>com.transsion.camera.feature.setting.nighthawk.NightHawkEntry</item>
         <item>com.transsion.camera.feature.setting.transsioncameramode.TranssionCameraModeEntry</item>
         <item>com.transsion.camera.feature.setting.autofocusswitch.AutoFocusSwitchEntry</item>
@@ -217,17 +209,11 @@
         <item>com.transsion.camera.feature.setting.smiledetection.SmileDetectionEntry</item>
         <item>com.transsion.camera.feature.setting.portraitmodeenhance.PortraitModeEnhanceEntry</item>
         <item>com.transsion.camera.feature.setting.telecamera.TeleCameraEntry</item>
-        <item>com.transsion.camera.feature.setting.bwportrait.BWPortraitEntry</item>
-        <item>com.transsion.camera.feature.setting.dualcambwportrait.DualCamBWPortraitEntry</item>
         <item>com.transsion.camera.feature.setting.timelapserate.TimeLapseRateEntry</item>
         <item>com.transsion.camera.feature.setting.timelapseduration.TimeLapseDurationEntry</item>
         <item>com.transsion.camera.feature.setting.smartmodeorder.SmartModeOrderEntry</item>
-        <item>com.transsion.camera.feature.setting.humaneffect.HumanEffectEntry</item>
         <item>com.transsion.camera.feature.setting.barcode.BarcodeEntry</item>
         <item>com.transsion.camera.feature.setting.faceattribute.FaceAttributeEntry</item>
-        <item>com.transsion.camera.feature.asdenhance.ASDEnhanceEntry</item>
-        <item>com.transsion.camera.feature.setting.moondetection.MoonDetectionEntry</item>
-        <item>com.transsion.camera.feature.setting.MicroPanTiltCalibration.MicroPanTiltCalibrationEntry</item>
         <item>com.transsion.camera.feature.mode.photo.PhotoModeEntry</item>
         <item>com.transsion.camera.feature.mode.photo.IntentPhotoModeEntry</item>
         <item>com.transsion.camera.feature.mode.video.VideoModeEntry</item>
@@ -248,15 +234,9 @@
         <item>com.transsion.camera.feature.funvideo.mode.FunVideoModeEntry</item>
         <item>com.transsion.camera.feature.mode.doc.DocumentEntry</item>
         <item>com.transsion.camera.feature.mode.video.SlowMotionModeEntry</item>
-        <item>com.transsion.camera.feature.mode.professional.ProfessionalModeEntry</item>
         <item>com.transsion.camera.feature.mode.macro.MacroModeEntry</item>
-        <item>com.transsion.camera.feature.arcore.ARCoreModeEntry</item>
-        <item>com.transsion.camera.feature.mode.bwportrait.BWPortraitModeEntry</item>
         <item>com.transsion.camera.feature.mode.video.TimeLapseVideoModeEntry</item>
-        <item>com.transsion.camera.feature.mode.movie.MovieModeEntry</item>
         <item>com.transsion.camera.feature.mode.highdefinition.HighDefinitionModeEntry</item>
-        <item>com.transsion.camera.feature.mode.supermoon.SuperMoonModeEntry</item>
-        <item>com.transsion.camera.feature.supernightfilter.mode.SuperNightFilterModeEntry</item>
     </string-array>
     <string-array name="build_in_features_back_mode_order">
         <item>com.transsion.camera.feature.funvideo.mode.FunVideoModeEntry</item>
@@ -329,8 +309,6 @@
         <item>com.transsion.camera.ui.setting.widecamera.WideCameraToggleEntry</item>
         <item>com.transsion.camera.ui.setting.widecamera.FrontWideCameraToggleEntry</item>
         <item>com.transsion.camera.ui.setting.widecamera.FrontWideCameraToggleExtEntry</item>
-        <item>com.transsion.camera.ui.setting.widecamera.MultiplePersonSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.widecamera.SinglePersonSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.widecamera.FrontMultiplePersonSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.widecamera.FrontSinglePersonSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.widecamera.cropfov.FrontCropFovSettingUIEntry</item>
@@ -342,8 +320,6 @@
         <item>com.transsion.camera.ui.setting.zoom.TeleZoomSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.zoom.SecondZoomSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.zoom.FirstZoomSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.zoom.NormalCameraSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.zoom.SinglePersonSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.level.LevelSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.superdefinition.SuperDefinitionSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videoduration.VideoDurationSettingUIEntry</item>
@@ -356,8 +332,6 @@
         <item>com.transsion.camera.ui.setting.videofacebeauty.VideoFaceBeautySettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videoportrait.VideoPortraitSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.videoportraitlevel.VideoPortraitLevelSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.aigroupphoto.AIGroupPhotoSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.horizonswitchwide.HorizonSwitchWideSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.exposuretime.ExposureTimeSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.iso.ISOSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.whitebalance.WhiteBalanceSettingUIEntry</item>
@@ -370,17 +344,11 @@
         <item>com.transsion.camera.ui.setting.smiledetection.SmileDetectionSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.portraitmodeenhance.PortraitModeEnhanceSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.telecamera.TeleCameraSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.bwportrait.BWPortraitSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.dualcambwportrait.DualCamBWPortraitSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.timelapserate.TimeLapseRateSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.timelapseduration.TimeLapseDurationSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.smartmodeorder.SmartModeOrderSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.supernightstable.SuperNightStableSettingUIEntry</item>
-        <item>com.transsion.camera.feature.asdenhance.ui.ASDEnhanceSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.humaneffect.HumanEffectSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.BarcodeSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.moondetection.MoonDetectionSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.MicroPanTiltCalibration.MicroPanTiltCalibrationUIEntry</item>
     </string-array>
     <string-array name="common_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.focus.FocusSettingUIEntry</item>
@@ -407,8 +375,6 @@
         <item>com.transsion.camera.ui.setting.autowatermark.AutoWaterMarkSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.screenflash.ScreenFlashSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.mirror.MirrorSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.aigroupphoto.AIGroupPhotoSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.horizonswitchwide.HorizonSwitchWideSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.picturesize.PictureSizeSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.selftimer.SelfTimerSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.autofocusswitch.AutoFocusSwitchSettingUIEntry</item>
@@ -592,8 +558,6 @@
         <item>com.transsion.camera.ui.setting.autowatermark.AutoWaterMarkSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.screenflash.ScreenFlashSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.mirror.MirrorSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.aigroupphoto.AIGroupPhotoSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.horizonswitchwide.HorizonSwitchWideSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.picturesize.PictureSizeSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.selftimer.SelfTimerSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.autofocusswitch.AutoFocusSwitchSettingUIEntry</item>
@@ -819,8 +783,6 @@
         <item>com.transsion.camera.ui.setting.distortioncorrection.DistortionCorrectionSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.screenflash.ScreenFlashSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.mirror.MirrorSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.aigroupphoto.AIGroupPhotoSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.horizonswitchwide.HorizonSwitchWideSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.picturesize.PictureSizeSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.selftimer.SelfTimerSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.smiledetection.SmileDetectionSettingUIEntry</item>
@@ -1308,7 +1270,6 @@
         <item>com.transsion.camera.ui.setting.restore.RestoreSettingsUIEntry</item>
     </string-array>
     <string-array name="stblur_mode_setting_ui_entries">
-        <item>com.transsion.camera.ui.setting.humaneffect.HumanEffectSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.guideline.GuideLineSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.touchcapture.TouchCaptureSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.selftimer.SelfTimerSettingUIEntry</item>
@@ -1685,9 +1646,7 @@
         <item>com.transsion.camera.feature.mode.video.VideoModeEntry</item>
         <item>com.transsion.camera.feature.mode.video.SlowMotionModeEntry</item>
         <item>com.transsion.camera.feature.mode.video.TimeLapseVideoModeEntry</item>
-        <item>com.transsion.camera.feature.mode.movie.MovieModeEntry</item>
         <item>com.transsion.camera.feature.mode.armode.ARModeEntry</item>
-        <item>com.transsion.camera.feature.arcore.ARCoreModeEntry</item>
         <item>com.transsion.camera.feature.funvideo.mode.FunVideoModeEntry</item>
     </string-array>
     <array name="video_mode_front_wide_bottom_bar_setting_ui_entries" />
@@ -1887,7 +1846,6 @@
         <item>com.transsion.camera.ui.setting.selftimer.SelfTimerSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.level.LevelSettingUIEntry</item>
         <item>com.transsion.camera.ui.setting.smiledetection.SmileDetectionSettingUIEntry</item>
-        <item>com.transsion.camera.ui.setting.humaneffect.HumanEffectSettingUIEntry</item>
     </string-array>
     <string-array name="vsdof_mode_top_bar_setting_ui_entries">
         <item>com.transsion.camera.ui.setting.settingsentry.SettingsEntrySettingUIEntry</item>
