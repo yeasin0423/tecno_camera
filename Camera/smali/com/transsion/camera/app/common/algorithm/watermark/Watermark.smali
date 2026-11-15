@@ -47,9 +47,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
-    iput-object p1, p0, Lcom/transsion/camera/app/common/algorithm/watermark/Watermark;->mWatermarkImpl:Lcom/transsion/camera/app/common/algorithm/watermark/IWatermark;
+    iput-object v0, p0, Lcom/transsion/camera/app/common/algorithm/watermark/Watermark;->mWatermarkImpl:Lcom/transsion/camera/app/common/algorithm/watermark/IWatermark;
 
     return-void
 .end method
