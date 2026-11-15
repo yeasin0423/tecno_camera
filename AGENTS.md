@@ -5,8 +5,9 @@ Decompiled + hand-ported copy of the TECNO/Transsion stock camera app
 phone's stock **Android 11** ROM; the phone now runs an **Android 16 GSI**
 (system + system_ext + product = API 36) on top of the **Android 11 vendor**
 partition. The port (added/edited smali, added `lib/*.so`, extra build tweaks)
-is working; **modernization to minSdk 33 / targetSdk 36 is done and builds, but
-is unverified on-device** — see the checklist below.
+is working; **modernization to minSdk 33 / targetSdk 36 is done and verified
+on-device** (app launches, permission flow, predictive back, all-files gate,
+video-record mute, AR/FunVideo modes).
 
 ## Toolchain: apktool only — no Gradle, no Android Studio
 `Camera/` is an apktool 3.0.3 working tree. The decompiled tree, not any IDE
@@ -138,6 +139,17 @@ project, is the source of truth.
   rejects attributes added after API 30.
 - `versionName` in `apktool.yml` ends with `-ModByYeasin`; keep the suffix and
   bump it deliberately when rebuilding for install/testing.
+- `key_video_mute` (video mute, records no audio track) is implemented like
+  the stock shutter-sound setting: `VideoMute` feature + `VideoMuteEntry`
+  (registered in `build_in_features`) + `VideoMuteSettingUIEntry`/`Spec`
+  (registered in `build_in_setting_ui_entries`, shown only in video mode's
+  preference list) + `VideoMuteParametersConfigure` (fills entry values in
+  `setCameraCapabilities`). New toggle settings **must be registered in both
+  arrays plus the feature registry**, or the toggle shows blank/won't display/
+  won't persist.
+- The settings-screen toggle needs the feature's `getEntryValues()` non-empty,
+  which happens in `setCameraCapabilities`; empty values log
+  `PreferenceItemUI: support value is null!` and hide the row.
 - Do not move, rename or "update" the ported `lib/*.so` files — they are the
   port (arcsoft, face-unlock, XDocProcess, etc.) and come from the stock app.
 - Don't delete `original/`, `unknown/` or `assets/` "cleanups" — apktool needs
