@@ -156,7 +156,17 @@ project, is the source of truth.
   them all to rebuild.
 - apktool build prints `Picked up JAVA_TOOL_OPTIONS: -Xmx3G …`; harmless noise.
 
+## Known non-fixables (GSI/vendor limitations)
+- `BGHIDLConnection` / `CamAp_BGServiceProxy` `NoSuchElementException` — vendor bg-service is not exposed to untrusted apps on this GSI (SELinux/vendor-only).
+- `ThermalThrottle … EACCES` — vendor driver files (`/proc/driver/cl_cam_status`, `/sys/devices/…/tran_cam`) not readable by untrusted apps.
+- `VendorTagDescriptor` "Tag name … does not exist" — GSI camera HAL doesn't implement the Mediatek vendor tags the stock app requests.
+- SELinux `ServiceManager: SecurityException` / `avc: denied` — system/radio-partition denials, not the app's domain.
+- `ThemeUtils` `VerticalSeekBar is an AppCompat widget` — stock theme mismatch; cosmetic only.
+- `MTK-PlatformCam: illegal gender attribute value` — HA L-side complaint; can't change vendor behavior.
+- `VendorTagDescriptor` — vendor tag mismatch, HAL contract issue.
+- Vendor libs absent/incompatible (slow motion, dual-cam, face unlock) — the app tries them, logs and skips; this is expected on this GSI.
 ## On-device verification checklist (first install after the targetSdk 36 bump)
+None of these are app bugs — they reflect running a stock stock ROM on a generic GSI with a different vendor partition. Any fix requires a matching vendor image; the app cannot add sepolicy rules or HAL features.
 The user runs all on-device steps (never run `adb` yourself). After sign +
 install:
 1. Grant **All files access** for Camera (Settings → Apps → Camera →
