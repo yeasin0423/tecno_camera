@@ -3,6 +3,10 @@
 .source "VideoMute.java"
 
 
+# instance fields
+.field private mVideoMuteParametersConfigure:Lcom/transsion/camera/app/common/setting/ICameraSetting$IParametersConfigure;
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 0
@@ -15,6 +19,26 @@
 
 
 # virtual methods
+.method public getParametersConfigure()Lcom/transsion/camera/app/common/setting/ICameraSetting$IParametersConfigure;
+    .locals 1
+
+    .line 43
+    iget-object v0, p0, Lcom/transsion/camera/feature/setting/videomute/VideoMute;->mVideoMuteParametersConfigure:Lcom/transsion/camera/app/common/setting/ICameraSetting$IParametersConfigure;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/transsion/camera/feature/setting/videomute/VideoMuteParametersConfigure;
+
+    invoke-direct {v0, p0}, Lcom/transsion/camera/feature/setting/videomute/VideoMuteParametersConfigure;-><init>(Lcom/transsion/camera/feature/setting/videomute/VideoMute;)V
+
+    iput-object v0, p0, Lcom/transsion/camera/feature/setting/videomute/VideoMute;->mVideoMuteParametersConfigure:Lcom/transsion/camera/app/common/setting/ICameraSetting$IParametersConfigure;
+
+    :cond_0
+    iget-object p0, p0, Lcom/transsion/camera/feature/setting/videomute/VideoMute;->mVideoMuteParametersConfigure:Lcom/transsion/camera/app/common/setting/ICameraSetting$IParametersConfigure;
+
+    return-object p0
+.end method
+
 .method public getKey()Ljava/lang/String;
     .locals 0
 
